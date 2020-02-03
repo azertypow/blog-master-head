@@ -1,0 +1,19 @@
+.v-app__article-content {
+  position: relative;
+  width: calc(100% / 20 * 16);
+  margin: auto;
+
+  p, h4, h5, h6 {
+    width: calc(100% / 16 * 14);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+    display: block;
+    width: calc(100% / 14 * 16);
+    height: auto;
+    position: relative;
+    margin-left: calc(-100% / 14);
+  }
+}

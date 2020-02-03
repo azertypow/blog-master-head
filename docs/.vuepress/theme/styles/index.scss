@@ -1,0 +1,74 @@
+@import "params";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $site-color;
+  color: invert($site-color);
+}
+
+html {
+  font-size: 10px;
+  line-height: 20px;
+  @include column-container;
+}
+
+body {
+  font-family: "Suisse EDU Int'l", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@import "./article-content";
+
+h1 {
+  font-size: 3.75em;
+  line-height: 6rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2.75em;
+  line-height: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.75em;
+  line-height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1em;
+  line-height: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: .75em;
+  line-height: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: .75em;
+  line-height: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
