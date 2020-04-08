@@ -1,26 +1,15 @@
 # Soft Robots
 
-::: intro
-Soft Robots explores new forms of play when reconfigurable robots interact with humans and the world.
-::: 
-
-::: credit
-
-Laure Krayenbuhl  
-Douglas Edric Stanley
-
-:::
-
-::: date
-
-10.04.2020
-
-:::
+Soft Robots explores new forms of play when reconfigurable robots interact with humans and the world. 
 
 ## Bestiary
 ![Snake Mole](https://i.imgur.com/bk74U3K.gif)
-![Polymorph](https://i.imgur.com/zRQz0bX.gif)
 ![Moduls](https://i.imgur.com/7bcfhHi.gif)
+![Polymorph](https://i.imgur.com/zRQz0bX.gif)
+
+
+
+
 
 ## Credits
 
