@@ -1,5 +1,5 @@
 module.exports = {
-  title: "techno sphère",
+  title: "distorsions.",
   description: "site description",
   locales: {
     "/": {
@@ -9,19 +9,37 @@ module.exports = {
 
   markdown: {
     anchor: {
-      permalink: true,
-      permalinkSymbol: "",
+      permalink: false,
     }
   },
 
   plugins: [
+    'vuepress-plugin-typescript',
     [
-      'vuepress-plugin-typescript',
+      "vuepress-plugin-container",
       {
-        tsLoaderOptions: {
-          // All options of ts-loader
-        },
+        type: 'intro',
+        before: '<div class="l-page__intro">',
+        after: '</div>',
       },
     ],
+    [
+      "vuepress-plugin-container",
+      {
+        type: 'credit',
+        before: '<div class="l-page__credit">',
+        after: '</div>',
+      },
+    ],
+    [
+      "vuepress-plugin-container",
+      {
+        type: 'date',
+        before: '<div class="l-page__date">',
+        after: '</div>',
+      },
+
+    ]
   ],
 }
+

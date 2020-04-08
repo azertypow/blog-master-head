@@ -10,15 +10,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^3.7.4",
-    "vue": "^2.6.11",
-    "vuepress-plugin-typescript": "^0.1.1"
+    "normalize.css": "^8.0.1",
+    "vue": "^2.6.11"
   },
   "devDependencies": {
-    "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0",
-    "vue-class-component": "^7.1.0",
-    "vue-property-decorator": "^8.3.0",
-    "vuepress-types": "^0.6.0"
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "typescript": "^3.8.3",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^8.4.1",
+    "vuepress": "^1.4.0",
+    "vuepress-plugin-container": "^2.1.2",
+    "vuepress-plugin-typescript": "^0.2.0",
+    "vuepress-types": "^0.9.0"
   }
 }

@@ -1,4 +1,12 @@
-# workshop article page title
+---
+
+title: projects
+
+---
+
+# distorsion series
+
+<ListOfArticles></ListOfArticles>
 
 # titre de premier niveau titre de premier niveau titre de premier niveau titre de premier niveau
 ## titre de second niveau titre de second niveau titre de second niveau titre de second niveau
@@ -12,20 +20,23 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aperiam atque dele
 
 ## système personalisé:
 
-video depuis vimeo
-<Video src="url_depuis_vimeo"/>
+vimeo
+<Vimeo src="https://vimeo.com/377349568"/>
+<Vimeo src="https://vimeo.com/377349525">Text description sample, Global Resorts Network Grn Putting Timeshares To Shame</Vimeo>
 
+soundCloud
+<SoundCloud src="url_depuis_soundcloud"/>
+<SoundCloud src="url_depuis_soundcloud">text description sample</SoundCloud>
 
-<Galery src="url_depuis_vimeo, url2, ulr3" >avec text en dessous</Galery>
+Galleries
 
+<GalleryVimeo src="vimeo_url_1, vimeoUrl_2, vimeo_url_3"/>
+<GalleryVimeo src="vimeo_url_1, vimeoUrl_2, vimeo_url_3">text description sample</GalleryVimeo>
 
-son depuis sound cloud
-<Sound src="url_depuis_soundcloud"/>
+<GalleryImage src="image_url_1, vimimage_2, image_url_3">
+<GalleryImage src="image_url_1, vimimage_2, image_url_3"/>text description sample</GalleryImage>
 
-3D chargé avec ThreeJS (selon besoin)
-<ThreeJS src="url_fichier_threeJS"/>
-
-[Articles](/articles/)
+[page sample](./articles/samples/)
 
 
 

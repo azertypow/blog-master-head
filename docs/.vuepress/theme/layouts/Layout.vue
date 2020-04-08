@@ -1,20 +1,58 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap');
+</style>
+
 <template>
   <div id="v-app">
+
     <nav class="v-app__nav">
-        <div>{{this.$site.title}}</div>
-        <div>mastermediadesign.ch</div>
+
+      <div class="v-app__nav__container">
+
+        <div class="v-app__nav__left">{{this.$site.title}}</div>
+
+        <div class="v-app__nav__center">
+
+          <div class="l-site-nav">
+
+            <div class="l-site-nav__title">{{this.$page.title}}</div>
+            <ul class="l-site-nav__list">
+              <li v-for="page of $site.pages">
+                <a :href="page.path">{{page.title}}</a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="v-app__nav__right">mastermediadesign.ch</div>
+
+      </div>
+
     </nav>
 
     <main>
 
       <header ref="articleHeader"
               class="v-app__article-header">
-        <h1
-                class="v-app__article-title"
-                v-html="this.articleTitle"></h1>
       </header>
+      <h1
+              class="v-app__article-title"
+              v-html="this.articleTitle"></h1>
 
       <section>
+
+        <div class="l-llist-of-student">
+          <div>Gabriel Abergel</div>
+          <div>Leyla Baghirli</div>
+          <div>Aurélie Belle</div>
+          <div>Amsatou Diop</div>
+          <div>Laïs Kunzendorff</div>
+          <div>Johan Pardo</div>
+        </div>
+
         <Content
                 ref="articlesContent"
                 class="v-app__article-content"
@@ -30,7 +68,6 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import Test from "../components/Test.vue"
 import {isVue} from "../util"
 
 @Component({
@@ -89,36 +126,5 @@ export default class Layout extends Vue {
 <style lang="scss">
   @import "../styles/params";
 
-  $nav-height: 6rem;
 
-  .v-app__nav {
-    @include column-container;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: $nav-height;
-    position: fixed;
-    background-color: $site-color;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100000;
-  }
-
-  main {
-    padding-top: $nav-height;
-  }
-
-  .v-app__article-header {
-    overflow: hidden;
-    width: 100%;
-    background: #e2e2e2;
-    height: calc(100vh - #{$nav-height} - 8rem);
-  }
-
-  .v-app__article-title {
-    font-family: "Suisse EDU Works", serif;
-    font-size: 5em;
-    line-height: 8rem;
-  }
 </style>

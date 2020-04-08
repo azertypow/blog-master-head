@@ -2,10 +2,9 @@ $site-color: white;
 
 $grid-gutter-width: 20px;
 
-//mixin
+$font-family-title: 'Spectral', serif;
+$font-family-default: 'Inter', sans-serif;
 
-@mixin column-container {
-  padding-left: $grid-gutter-width;
-  padding-right: $grid-gutter-width;
-  box-sizing: border-box;
-}
+$nav-height: 6rem;
+
+$header-article-height: 450px;

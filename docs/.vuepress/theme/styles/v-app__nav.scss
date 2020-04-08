@@ -1,0 +1,78 @@
+
+
+main {
+  padding-top: $nav-height;
+
+  max-width: 1280px;
+  box-sizing: border-box;
+  margin: auto;
+
+  > section {
+    position: relative;
+  }
+
+  .l-llist-of-student {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-family: $font-family-title;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 800;
+  }
+}
+
+.v-app__nav {
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
+  box-sizing: border-box;
+  position: fixed;
+  background-color: $site-color;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+}
+
+.v-app__nav__container {
+  @include column-container;
+  width: 100%;
+  height: $nav-height;
+
+  max-width: 1280px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.v-app__nav__left {
+  @include grid-coll-number(2, 12);
+}
+
+.v-app__nav__center {
+
+}
+
+.v-app__nav__right {
+  @include grid-coll-number(2, 12);
+  margin-left: auto;
+  text-align: right;
+}
+
+.v-app__article-header {
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  background: #e2e2e2;
+  height: $header-article-height;
+}
+
+.v-app__article-title {
+  font-family: $font-family-title;
+  font-size: 135px;
+  line-height: 140px;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+  margin: 0;
+  position: relative;
+  transform: translate3d(0px, -1.6ex, 0px);
+}
