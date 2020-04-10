@@ -46,18 +46,11 @@
 
       <section>
 
-        <div class="l-llist-of-student" v-if="$page.frontmatter.students">
-          <div>Gabriel Abergel</div>
-          <div>Leyla Baghirli</div>
-          <div>Aurélie Belle</div>
-          <div>Amsatou Diop</div>
-          <div>Laïs Kunzendorff</div>
-          <div>Johan Pardo</div>
-        </div>
+        <ListOfStudents v-if="$page.frontmatter.students"></ListOfStudents>
 
         <Content
                 ref="articlesContent"
-                class="v-app__article-content"
+                class="v-app__article-content ts-fixed-repper"
         />
       </section>
     </main>
@@ -76,8 +69,10 @@
 import { Component, Vue } from 'vue-property-decorator'
 import {isVue} from "../util"
 import {store} from "../enhanceApp"
+import ListOfStudents from "../components/ListOfStudents.vue"
 
 @Component({
+  components: {ListOfStudents},
   mounted(this: Layout) {
     this.$nextTick(() => {
       this.updateHeaderVariables()
@@ -156,14 +151,18 @@ export default class Layout extends Vue {
         const imageContainerLeft  = document.createElement("div")
         imageContainerLeft.className = "ts-img-container__left"
 
-        const imageContainerCenter  = document.createElement("div")
-        imageContainerCenter.className = "ts-img-container__center"
+        const imageContainerCenterLeft  = document.createElement("div")
+        imageContainerCenterLeft.className = "ts-img-container__center-left"
+
+        const imageContainerCenterRight  = document.createElement("div")
+        imageContainerCenterRight.className = "ts-img-container__center-right"
 
         const imageContainerRight = document.createElement("div")
         imageContainerRight.className = "ts-img-container__right"
 
         imagesContainer.appendChild( imageContainerLeft )
-        imagesContainer.appendChild( imageContainerCenter )
+        imagesContainer.appendChild( imageContainerCenterLeft )
+        imagesContainer.appendChild( imageContainerCenterRight )
         imagesContainer.appendChild( imageContainerRight )
 
         imageInPElementNodeList.forEach( ( imageInPElement, index ) => {
@@ -185,8 +184,9 @@ export default class Layout extends Vue {
             })
           })
 
-          if      ( index % 3 === 0 ) imageContainerLeft.appendChild( imageBox )
-          else if ( index % 3 === 1 ) imageContainerCenter.appendChild( imageBox )
+          if      ( index % 4 === 0 ) imageContainerLeft.appendChild( imageBox )
+          else if ( index % 4 === 1 ) imageContainerCenterLeft.appendChild( imageBox )
+          else if ( index % 4 === 2 ) imageContainerCenterRight.appendChild( imageBox )
           else imageContainerRight.appendChild( imageBox )
 
         })
