@@ -68,8 +68,7 @@
             width: calc(100% / 12 * 2);
             top: 60px;
             box-sizing: border-box;
-            /*left: 0;*/
-            /*padding-left: 20px;*/
+            left: unset;
         }
     }
 </style>
