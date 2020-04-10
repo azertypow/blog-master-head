@@ -1,3 +1,9 @@
+---
+
+students: Gabriel Abergel, Leyla Baghirli, Aurélie Belle, Amsatou Diop, Laïs Kunzendorff, Johan Pardo
+
+---
+
 # Soft Robots
 
 ::: intro
@@ -19,8 +25,15 @@ Douglas Edric Stanley
 
 ## Bestiary
 ![Snake Mole](https://i.imgur.com/bk74U3K.gif)
-![Polymorph](https://i.imgur.com/zRQz0bX.gif)
 ![Moduls](https://i.imgur.com/7bcfhHi.gif)
+![Polymorph](https://i.imgur.com/zRQz0bX.gif)
+![Morphing](https://i.imgur.com/x9btDDC.gif)
+![AB_triangularbird](https://i.imgur.com/AUevLbG.gif)
+![AB_BagFace](https://i.imgur.com/S6mLVZK.gif)
+![AB_Aspirator](https://i.imgur.com/AWZmEIC.gif)
+![AB_ElectroCarpet](https://i.imgur.com/NRewKSb.gif)
+![Worm_LB](https://i.imgur.com/1PSqOas.gif)
+![Butterfly_LB](./UMTVNtz.gif)
 
 ## Credits
 
