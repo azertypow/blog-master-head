@@ -14,7 +14,7 @@ main {
   .l-llist-of-student {
     position: absolute;
     left: 0;
-    top: 10px;
+    top: 28px;
     font-family: $font-family-title;
     font-size: 15px;
     line-height: 20px;
@@ -75,4 +75,5 @@ main {
   margin: 0;
   position: relative;
   transform: translate3d(0px, -1.6ex, 0px);
+  margin-bottom: -1.6ex;
 }

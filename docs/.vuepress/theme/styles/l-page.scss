@@ -7,4 +7,17 @@
   font-size: 45px;
   line-height: 50px;
   letter-spacing: -0.01em;
+
+  p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+.l-page__intro,
+.l-page__credit,
+.l-page__date {
+  + h2 {
+    margin-top: 25px;
+  }
 }
