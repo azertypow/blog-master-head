@@ -28,7 +28,7 @@ Douglas Edric Stanley
 ![Moduls](https://i.imgur.com/7bcfhHi.gif)
 ![Polymorph](https://i.imgur.com/zRQz0bX.gif)
 ![Morphing](https://i.imgur.com/x9btDDC.gif)
-![AB_triangularbird](https://i.imgur.com/AUevLbG.gif)
+![AB_triangularbird](./AUevLbG.gif)
 ![AB_BagFace](https://i.imgur.com/S6mLVZK.gif)
 ![AB_Aspirator](https://i.imgur.com/AWZmEIC.gif)
 ![AB_ElectroCarpet](https://i.imgur.com/NRewKSb.gif)
@@ -37,5 +37,5 @@ Douglas Edric Stanley
 
 ## Credits
 
-Soft Robots is a semester project of Master 1 students of the [Master Media Design](https://www.hesge.ch/head/en/programs-research/master-arts-media-design), [HEAD – Genève](https://www.hesge.ch/head) in collaboration with the EPFL [Reconfigurable Robotics Lab](https://www.epfl.ch/labs/rrl/) and its director [Jamie Paik](https://people.epfl.ch/jamie.paik). The project leads are [Laure Kreyenbuhl](http://a-project.studio/who-we-are/) & [Douglas Edric Stanley](http://www.abstractmachine.net), with assistance from [Nicolas Baldran](https://www.hesge.ch/head/annuaire/nicolas-baldran) & [David Héritier](https://www.dhcv.ch). Students: Gabriel Abergel, Leyla Baghirli, Aurélie Belle, Amsatou Diop, Laïs Kunzendorff, Johan Pardo.
+Soft Robots is a semester project of Master 1 students of the [Master Media Design](https://www.hesge.ch/head/en/programs-research/master-arts-media-design), [HEAD&nbsp;—&nbsp;Genève](https://www.hesge.ch/head) in collaboration with the EPFL [Reconfigurable Robotics Lab](https://www.epfl.ch/labs/rrl/) and its director [Jamie Paik](https://people.epfl.ch/jamie.paik). The project leads are [Laure Kreyenbuhl](http://a-project.studio/who-we-are/) & [Douglas Edric Stanley](http://www.abstractmachine.net), with assistance from [Nicolas Baldran](https://www.hesge.ch/head/annuaire/nicolas-baldran) & [David Héritier](https://www.dhcv.ch). Students: Gabriel Abergel, Leyla Baghirli, Aurélie Belle, Amsatou Diop, Laïs Kunzendorff, Johan Pardo.
 
