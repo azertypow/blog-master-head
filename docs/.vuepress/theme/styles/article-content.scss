@@ -101,6 +101,7 @@
 
   .ts-img-container__img-container {
     position: relative;
+    cursor: pointer;
 
     &:hover:after {
       content: attr(data-alt);

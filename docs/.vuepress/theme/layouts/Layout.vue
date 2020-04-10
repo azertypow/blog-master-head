@@ -62,6 +62,10 @@
       </section>
     </main>
 
+    <transition name="fade">
+      <GalleryImage class="to-animate" v-if="storeData.imageGallery" :prop="storeData.imageGallery"></GalleryImage>
+    </transition>
+
     <footer>
       <p>footer</p>
     </footer>
@@ -71,6 +75,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import {isVue} from "../util"
+import {store} from "../enhanceApp"
 
 @Component({
   mounted(this: Layout) {
@@ -80,6 +85,7 @@ import {isVue} from "../util"
       console.log("next mounted")
     })
 
+    window.addEventListener("scroll", this.scrollEvent)
   },
 
   watch:{
@@ -95,6 +101,13 @@ export default class Layout extends Vue {
 
   articleTitle: string = this.$siteTitle || ""
   articleTitleRefElementInContent?: HTMLElement
+
+  storeData = store.state
+
+  scrollEvent = () => {
+    console.log("scroll")
+    if (this.storeData.imageGallery !== null) store.clearImageGallery()
+  }
 
   setArticleTitleFromElement(Element: Element) {
 
@@ -159,8 +172,18 @@ export default class Layout extends Vue {
           imageBox.className = "ts-img-container__img-container"
 
           imageBox.appendChild(imageInPElement)
-          const imageAlt = imageInPElement.getAttribute("alt")
-          if( imageAlt !== null ) imageBox.setAttribute("data-alt", imageAlt )
+          const imageAlt = imageInPElement.getAttribute("alt") || ""
+          imageBox.setAttribute("data-alt", imageAlt )
+
+          imageBox.addEventListener("click", () => {
+
+            console.log(store)
+
+            store.setImageGallery({
+              alt: imageAlt,
+              src: (imageInPElement as HTMLImageElement).src
+            })
+          })
 
           if      ( index % 3 === 0 ) imageContainerLeft.appendChild( imageBox )
           else if ( index % 3 === 1 ) imageContainerCenter.appendChild( imageBox )
@@ -175,8 +198,6 @@ export default class Layout extends Vue {
 
     })
 
-
-
   }
 }
 </script>
@@ -184,5 +205,27 @@ export default class Layout extends Vue {
 <style lang="scss">
   @import "../styles/params";
 
+  .fade-enter {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
 
+  .fade-enter-to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .fade-leave {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .fade-leave-to {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity 250ms ease-out, transform 250ms ease-out;
+  }
 </style>

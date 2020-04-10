@@ -1,21 +1,73 @@
 <template>
-    <section class="v-gallery-image">
-        <h1>gallery images component</h1>
-        <p>url: {{this.src}}</p>
+    <section class="v-gallery-image" @click="closeGallery">
+        <img :src="prop.src" :alt="prop.alt">
+        <div class="v-gallery-image__title-container">
+            <h1 class="v-gallery-image__title">{{prop.alt}}</h1>
+        </div>
     </section>
 </template>
 
 <script lang="ts">
     import { Vue, Component, Prop } from "vue-property-decorator";
+    import {IGalleryImageProp} from "./IGalleryImage"
+    import {store} from "../enhanceApp"
 
     @Component
     export default class GalleryImage extends Vue {
-        @Prop({required: true}) src!: string
+        @Prop({required: true, type: Object})
+        prop!: IGalleryImageProp
+
+      closeGallery() {
+          store.clearImageGallery()
+      }
     }
+
 </script>
 
 <style lang="scss" scoped>
-    .v-gallery-image {
+    @import "../styles/params";
+    @import "../styles/grid";
 
+    .v-gallery-image {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: calc( 100% - 60px);
+        background: rgba(255, 255, 255, 0.75);
+
+        box-sizing: border-box;
+
+        cursor: pointer;
+    }
+
+    .v-gallery-image__title-container {
+        width: 100%;
+        padding-left: $grid-gutter-width;
+        padding-right: $grid-gutter-width;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .v-gallery-image__title {
+        font-family: $font-family-title;
+        font-weight: 900;
+        font-size: 45px;
+        line-height: 50px;
+        letter-spacing: calc( -4.5em / 100 );
+        @include grid-gap-left-coll(2, 12);
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        padding: 0 10px 10px 10px;
     }
 </style>
