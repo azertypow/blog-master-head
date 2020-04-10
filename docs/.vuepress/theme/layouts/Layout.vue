@@ -10,7 +10,7 @@
 
       <div class="v-app__nav__container">
 
-        <div class="v-app__nav__left"><a href="/">{{this.$site.title}}</a></div>
+        <div class="v-app__nav__left"><a class="l-site-home-link" href="/">{{this.$site.title}}</a></div>
 
         <div class="v-app__nav__center">
 
@@ -153,6 +153,7 @@ export default class Layout extends Vue {
 
           if( index % 2 === 0 ) imageContainerLeft.appendChild( imageInPElement )
           else imageContainerRight.appendChild( imageInPElement )
+
 
         })
 
