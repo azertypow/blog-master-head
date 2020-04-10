@@ -143,10 +143,14 @@ export default class Layout extends Vue {
         const imageContainerLeft  = document.createElement("div")
         imageContainerLeft.className = "ts-img-container__left"
 
+        const imageContainerCenter  = document.createElement("div")
+        imageContainerCenter.className = "ts-img-container__center"
+
         const imageContainerRight = document.createElement("div")
         imageContainerRight.className = "ts-img-container__right"
 
         imagesContainer.appendChild( imageContainerLeft )
+        imagesContainer.appendChild( imageContainerCenter )
         imagesContainer.appendChild( imageContainerRight )
 
         imageInPElementNodeList.forEach( ( imageInPElement, index ) => {
@@ -158,7 +162,8 @@ export default class Layout extends Vue {
           const imageAlt = imageInPElement.getAttribute("alt")
           if( imageAlt !== null ) imageBox.setAttribute("data-alt", imageAlt )
 
-          if( index % 2 === 0 ) imageContainerLeft.appendChild( imageBox )
+          if      ( index % 3 === 0 ) imageContainerLeft.appendChild( imageBox )
+          else if ( index % 3 === 1 ) imageContainerCenter.appendChild( imageBox )
           else imageContainerRight.appendChild( imageBox )
 
         })

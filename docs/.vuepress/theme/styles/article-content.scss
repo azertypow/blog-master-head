@@ -76,12 +76,17 @@
 .ts-img-container {
   display: flex;
   flex-wrap: nowrap;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
 .ts-img-container__left,
+.ts-img-container__center,
 .ts-img-container__right {
   width: 50%;
   box-sizing: border-box;
+  padding-left: 5px;
+  padding-right: 5px;
 
   img {
     margin: 0;
@@ -111,12 +116,4 @@
       bottom: 0;
     }
   }
-}
-
-.ts-img-container__left {
-  padding-right: 5px;
-}
-
-.ts-img-container__right {
-  padding-left: 5px;
 }
