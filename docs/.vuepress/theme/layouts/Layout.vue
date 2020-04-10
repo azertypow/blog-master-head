@@ -10,7 +10,7 @@
 
       <div class="v-app__nav__container">
 
-        <div class="v-app__nav__left">{{this.$site.title}}</div>
+        <div class="v-app__nav__left"><a href="/">{{this.$site.title}}</a></div>
 
         <div class="v-app__nav__center">
 
@@ -18,9 +18,11 @@
 
             <div class="l-site-nav__title">{{this.$page.title}}</div>
             <ul class="l-site-nav__list">
-              <li v-for="page of $site.pages">
-                <a :href="page.path">{{page.title}}</a>
-              </li>
+              <template v-for="page of $site.pages">
+                <li v-if="page.title !== 'projects' && page.title !== $page.title">
+                  <a :href="page.path">{{page.title}}</a>
+                </li>
+              </template>
             </ul>
 
           </div>
@@ -44,7 +46,7 @@
 
       <section>
 
-        <div class="l-llist-of-student">
+        <div class="l-llist-of-student" v-if="$page.frontmatter.students">
           <div>Gabriel Abergel</div>
           <div>Leyla Baghirli</div>
           <div>Aurélie Belle</div>
@@ -74,7 +76,10 @@ import {isVue} from "../util"
   mounted(this: Layout) {
     this.$nextTick(() => {
       this.updateHeaderVariables()
+      this.setImageLayout()
+      console.log("next mounted")
     })
+
   },
 
   watch:{
@@ -119,6 +124,47 @@ export default class Layout extends Vue {
       this.setArticleTitleFromElement(contentInstance.$el)
 
     }
+  }
+
+  setImageLayout() {
+    const articleContainer = this.$refs["articlesContent"] as Vue
+
+    const pElementNodeList = articleContainer.$el.querySelectorAll('p')
+
+    pElementNodeList.forEach( pElement => {
+
+      const imageInPElementNodeList = pElement.querySelectorAll('p > img')
+
+      if(imageInPElementNodeList.length > 1) {
+
+        const imagesContainer = document.createElement("div")
+        imagesContainer.className = "ts-img-container"
+
+        const imageContainerLeft  = document.createElement("div")
+        imageContainerLeft.className = "ts-img-container__left"
+
+        const imageContainerRight = document.createElement("div")
+        imageContainerRight.className = "ts-img-container__right"
+
+        imagesContainer.appendChild( imageContainerLeft )
+        imagesContainer.appendChild( imageContainerRight )
+
+        imageInPElementNodeList.forEach( ( imageInPElement, index ) => {
+
+          if( index % 2 === 0 ) imageContainerLeft.appendChild( imageInPElement )
+          else imageContainerRight.appendChild( imageInPElement )
+
+        })
+
+        articleContainer.$el.insertBefore(imagesContainer, pElement.nextElementSibling)
+
+        if(pElement.childElementCount === 0) pElement.style.display = "none"
+      }
+
+    })
+
+
+
   }
 }
 </script>
