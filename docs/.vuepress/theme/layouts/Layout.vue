@@ -151,9 +151,15 @@ export default class Layout extends Vue {
 
         imageInPElementNodeList.forEach( ( imageInPElement, index ) => {
 
-          if( index % 2 === 0 ) imageContainerLeft.appendChild( imageInPElement )
-          else imageContainerRight.appendChild( imageInPElement )
+          const imageBox = document.createElement("div")
+          imageBox.className = "ts-img-container__img-container"
 
+          imageBox.appendChild(imageInPElement)
+          const imageAlt = imageInPElement.getAttribute("alt")
+          if( imageAlt !== null ) imageBox.setAttribute("data-alt", imageAlt )
+
+          if( index % 2 === 0 ) imageContainerLeft.appendChild( imageBox )
+          else imageContainerRight.appendChild( imageBox )
 
         })
 

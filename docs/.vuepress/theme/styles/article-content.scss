@@ -81,9 +81,6 @@
 .ts-img-container__left,
 .ts-img-container__right {
   width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   box-sizing: border-box;
 
   img {
@@ -93,8 +90,26 @@
     box-sizing: border-box;
   }
 
-  img + img {
-    margin-top: 10px;
+  .ts-img-container__img-container + .ts-img-container__img-container {
+    padding-top: 10px;
+  }
+
+  .ts-img-container__img-container {
+    position: relative;
+
+    &:hover:after {
+      content: attr(data-alt);
+      font-family: "Spectral", serif;
+      line-height: 35px;
+      font-size: 35px;
+      font-weight: 700;
+      letter-spacing: calc( -4.5em / 100 );
+      transform: translate3d(0, .6ex, 0);
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
   }
 }
 
