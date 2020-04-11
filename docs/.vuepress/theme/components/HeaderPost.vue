@@ -72,8 +72,8 @@
         position: absolute;
         top: -25%;
         left: 5%;
-        width: calc( 100% / 12);
-        height: calc( 100% / 2.5);
+        width: 90px;
+        height: 180px;
         object-fit: cover;
         object-position: top left;
 

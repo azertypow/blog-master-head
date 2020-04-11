@@ -35,15 +35,15 @@
 
     </nav>
 
+    <header ref="articleHeader"
+            class="v-app__article-header">
+
+            <HeaderPost></HeaderPost>
+
+    </header>
+
     <main>
 
-
-      <header ref="articleHeader"
-              class="v-app__article-header">
-
-              <HeaderPost></HeaderPost>
-
-      </header>
       <h1
               class="v-app__article-title"
               v-html="this.articleTitle"></h1>

@@ -1,8 +1,6 @@
 
 
 main {
-  padding-top: $nav-height;
-
   max-width: 1280px;
   box-sizing: border-box;
   margin: auto;
@@ -52,9 +50,12 @@ main {
 .v-app__article-header {
   position: relative;
   overflow: visible;
-  width: 100%;
+  width: calc( 100% + #{$grid-gutter-width * 2});
   //background: #e2e2e2;
   height: $header-article-height;
+  margin-left: -$grid-gutter-width;
+
+  padding-top: $nav-height;
 }
 
 .v-app__article-title {
