@@ -37,8 +37,12 @@
 
     <main>
 
+
       <header ref="articleHeader"
               class="v-app__article-header">
+
+              <HeaderPost></HeaderPost>
+
       </header>
       <h1
               class="v-app__article-title"
@@ -70,13 +74,15 @@ import { Component, Vue } from 'vue-property-decorator'
 import {isVue} from "../util"
 import {store} from "../enhanceApp"
 import ListOfStudents from "../components/ListOfStudents.vue"
+import HeaderPost from "../components/HeaderPost.vue"
 
 @Component({
-  components: {ListOfStudents},
+  components: {HeaderPost, ListOfStudents},
   mounted(this: Layout) {
     this.$nextTick(() => {
       this.updateHeaderVariables()
       this.setImageLayout()
+      this.setImageInPostStoreList()
       console.log("next mounted")
     })
 
@@ -100,7 +106,6 @@ export default class Layout extends Vue {
   storeData = store.state
 
   scrollEvent = () => {
-    console.log("scroll")
     if (this.storeData.imageGallery !== null) store.clearImageGallery()
   }
 
@@ -132,6 +137,24 @@ export default class Layout extends Vue {
       this.setArticleTitleFromElement(contentInstance.$el)
 
     }
+  }
+
+  setImageInPostStoreList() {
+
+    const imgInPost = this.$el.querySelectorAll("img")
+
+    const arrayOfImgPostUrl: HTMLImageElement[] = []
+
+    imgInPost.forEach(img => {
+
+      if(img.src.length > 0) {
+        arrayOfImgPostUrl.push(img)
+      }
+
+    })
+
+    store.setImagesInCurrentPage(arrayOfImgPostUrl)
+
   }
 
   setImageLayout() {

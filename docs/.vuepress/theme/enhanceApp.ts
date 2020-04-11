@@ -8,17 +8,23 @@ import ListOfArticles          from "./components/ListOfArticles.vue"
 
 export interface IStoreState {
   imageGallery: null | IGalleryImageProp
+  imagesInCurrentPage: HTMLImageElement[]
 }
 
 export const store = {
   state: {
-    imageGallery: null
+    imageGallery: null,
+    imagesInCurrentPage: [],
   } as IStoreState,
   setImageGallery(prop: IGalleryImageProp) {
     this.state.imageGallery = prop
   },
   clearImageGallery() {
     this.state.imageGallery = null
+  },
+
+  setImagesInCurrentPage(value: HTMLImageElement[]) {
+    this.state.imagesInCurrentPage = value
   }
 }
 
