@@ -24,16 +24,18 @@ Douglas Edric Stanley
 :::
 
 ## Bestiary
-![Snake Mole](https://i.imgur.com/bk74U3K.gif)
-![Moduls](https://i.imgur.com/7bcfhHi.gif)
-![Polymorph](https://i.imgur.com/zRQz0bX.gif)
+![JP_Shifter](https://i.imgur.com/AO1wdFa.gif)
+![JP_We are one](https://i.imgur.com/csHcq9x.gif)
+![JP_Pyramidion](https://i.imgur.com/7oiahMM.gif)
+![JP_Grub](https://i.imgur.com/hJnlkyt.gif)
+![JP_Joyskin](https://i.imgur.com/TzXiuJD.gif)
 ![Morphing](https://i.imgur.com/x9btDDC.gif)
 ![AB_BagFace](https://i.imgur.com/S6mLVZK.gif)
 ![AB_triangularbird](./AUevLbG.gif)
 ![AB_ElectroCarpet](https://i.imgur.com/NRewKSb.gif)
 ![AB_Aspirator](https://i.imgur.com/AWZmEIC.gif)
-![Butterfly_LB](./UMTVNtz.gif)
 ![Worm_LB](https://i.imgur.com/1PSqOas.gif)
+![Butterfly_LB](./UMTVNtz.gif)
 
 ## Credits
 
