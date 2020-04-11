@@ -69,7 +69,6 @@
         top: 0;
         left: 0;
         box-sizing: border-box;
-        transform: translate3d(0, 50%, 0);
         padding: 0 60px 60px 60px;
     }
 </style>
