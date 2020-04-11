@@ -48,7 +48,7 @@
         box-sizing: border-box;
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: 60px;
     }
 
     .v-gallery-image__title {
@@ -57,6 +57,7 @@
         font-size: 45px;
         line-height: 50px;
         letter-spacing: calc( -4.5em / 100 );
+        margin: 0;
         @include grid-gap-left-coll(2, 12);
     }
 
@@ -68,6 +69,7 @@
         top: 0;
         left: 0;
         box-sizing: border-box;
-        padding: 0 10px 10px 10px;
+        transform: translate3d(0, 50%, 0);
+        padding: 0 60px 60px 60px;
     }
 </style>
