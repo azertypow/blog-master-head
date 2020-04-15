@@ -11,7 +11,7 @@
             <slot></slot>
         </div>
 
-        <button class="vi__play" >play video</button>
+        <button class="vi__play" @click="openVimeo">play video</button>
 
     </section>
 </template>
@@ -41,6 +41,17 @@
 
         const vimeoCover = this.$refs.vimeoCover
         if (vimeoCover instanceof HTMLDivElement) vimeoCover.style.backgroundImage = `url(${this.videoInfo?.thumbnail_url})`
+      }
+
+      openVimeo() {
+        if(this.videoInfo) {
+          const vimeoContainer = this.$refs.vimeoPlayer
+          if(vimeoContainer instanceof HTMLElement) {
+            const vimeoIframeContainer = document.createElement("div")
+            vimeoIframeContainer.innerHTML = this.videoInfo.html
+            vimeoContainer.appendChild(vimeoIframeContainer)
+          }
+        }
       }
 
     }

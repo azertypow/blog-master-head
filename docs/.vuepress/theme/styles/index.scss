@@ -106,6 +106,7 @@ section {
   left: 0;
   margin: 0;
   padding: 0;
+  padding-top: 20px;
   white-space: nowrap;
 
   transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
@@ -123,7 +124,8 @@ section {
   }
 }
 
-.l-site-nav:hover {
+.l-site-nav:hover,
+.l-site-nav.l-site-nav--open {
   .l-site-nav__list {
     pointer-events: auto;
     opacity: 1;

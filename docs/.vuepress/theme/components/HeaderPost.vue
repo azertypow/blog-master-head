@@ -44,8 +44,16 @@
         imageElement.addEventListener("load",  () => {
 
           this.arrayOfImagesURL.push(imageElement.src)
+          console.log("image loaded")
 
         })
+
+        if(imageElement.complete) {
+
+          this.arrayOfImagesURL.push(imageElement.src)
+          console.log("image complete")
+
+        }
       }
 
       randomPosition(): {x: number, y: number, z: number} {

@@ -39,7 +39,17 @@ module.exports = {
         after: '</div>',
       },
 
+    ],
+    [
+      "vuepress-plugin-container",
+      {
+        type: 'vimeo',
+        before: info => `<Vimeo src="${info}" >`,
+        after: '</Vimeo>',
+      },
+
     ]
+
   ],
 }
 

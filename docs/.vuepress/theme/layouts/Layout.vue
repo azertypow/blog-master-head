@@ -14,12 +14,12 @@
 
         <div class="v-app__nav__center">
 
-          <div class="l-site-nav">
+          <div class="l-site-nav" :class="{'l-site-nav--open': $page.path === '/'}">
 
-            <div class="l-site-nav__title">{{this.$page.title}}</div>
+            <div class="l-site-nav__title">{{this.siteNavTitle}}</div>
             <ul class="l-site-nav__list">
               <template v-for="page of $site.pages">
-                <li v-if="page.title !== 'projects' && page.title !== $page.title">
+                <li v-if="page.path !== '/' && page.title !== $page.title">
                   <a :href="page.path">{{page.title}}</a>
                 </li>
               </template>
@@ -45,6 +45,7 @@
     <main>
 
       <h1
+              v-if="$page.path !== '/'"
               class="v-app__article-title"
               v-html="this.articleTitle"></h1>
 
@@ -64,7 +65,7 @@
     </transition>
 
     <footer>
-      <p>footer</p>
+<!--      <p>footer</p>-->
     </footer>
   </div>
 </template>
@@ -107,6 +108,11 @@ export default class Layout extends Vue {
 
   scrollEvent = () => {
     if (this.storeData.imageGallery !== null) store.clearImageGallery()
+  }
+
+  get siteNavTitle() {
+    const beforeTitle = this.$page.path === '/' ? "" : "projects / "
+    return beforeTitle + this.$page.title
   }
 
   setArticleTitleFromElement(Element: Element) {
