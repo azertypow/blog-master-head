@@ -180,18 +180,14 @@ export default class Layout extends Vue {
         const imageContainerLeft  = document.createElement("div")
         imageContainerLeft.className = "ts-img-container__left"
 
-        const imageContainerCenterLeft  = document.createElement("div")
-        imageContainerCenterLeft.className = "ts-img-container__center-left"
-
-        const imageContainerCenterRight  = document.createElement("div")
-        imageContainerCenterRight.className = "ts-img-container__center-right"
+        const imageContainerCenter  = document.createElement("div")
+        imageContainerCenter.className = "ts-img-container__center"
 
         const imageContainerRight = document.createElement("div")
         imageContainerRight.className = "ts-img-container__right"
 
         imagesContainer.appendChild( imageContainerLeft )
-        imagesContainer.appendChild( imageContainerCenterLeft )
-        imagesContainer.appendChild( imageContainerCenterRight )
+        imagesContainer.appendChild( imageContainerCenter )
         imagesContainer.appendChild( imageContainerRight )
 
         imageInPElementNodeList.forEach( ( imageInPElement, index ) => {
@@ -213,9 +209,8 @@ export default class Layout extends Vue {
             })
           })
 
-          if      ( index % 4 === 0 ) imageContainerLeft.appendChild( imageBox )
-          else if ( index % 4 === 1 ) imageContainerCenterLeft.appendChild( imageBox )
-          else if ( index % 4 === 2 ) imageContainerCenterRight.appendChild( imageBox )
+          if      ( index % 3 === 0 ) imageContainerLeft.appendChild( imageBox )
+          else if ( index % 3 === 1 ) imageContainerCenter.appendChild( imageBox )
           else imageContainerRight.appendChild( imageBox )
 
         })

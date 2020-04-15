@@ -76,13 +76,14 @@
 .ts-img-container {
   display: flex;
   flex-wrap: nowrap;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
 .ts-img-container__left,
-.ts-img-container__center-left,
-.ts-img-container__center-right,
+.ts-img-container__center,
 .ts-img-container__right {
-  width: 50%;
+  width: calc(100% / 3);
   box-sizing: border-box;
   padding-left: 5px;
   padding-right: 5px;
