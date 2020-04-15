@@ -24,7 +24,6 @@ body {
   padding-left: $grid-gutter-width;
   padding-right: $grid-gutter-width;
   box-sizing: border-box;
-  letter-spacing: calc(-4.5em / 100);
 }
 
 @import "./article-content";
@@ -43,7 +42,6 @@ h2 {
   margin-top: 75px;
   margin-bottom: 25px;
   font-weight: 400;
-  letter-spacing: -0.01em;
 }
 
 h3 {

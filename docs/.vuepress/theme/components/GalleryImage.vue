@@ -56,7 +56,6 @@
         font-weight: 900;
         font-size: 45px;
         line-height: 50px;
-        letter-spacing: calc( -4.5em / 100 );
         margin: 0;
         @include grid-gap-left-coll(2, 12);
     }
