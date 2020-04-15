@@ -1,6 +1,9 @@
 ---
 
-students: Gabriel Abergel, Leyla Baghirli, Aurélie Belle, Amsatou Diop, Laïs Kunzendorff, Johan Pardo
+authors:    Jürg Lehni, Douglas Edric Stanley
+teachers:   Jürg Lehni, Douglas Edric Stanley
+students:   Gabriel Abergel, Leyla Baghirli, Aurélie Belle, Amsatou Diop, Laís Kunzendorff, Johan Pardo
+assistant:  Nicolas Baldran
 
 ---
 
@@ -31,11 +34,11 @@ Douglas Edric Stanley
 ![JP_Joyskin](https://i.imgur.com/TzXiuJD.gif)
 ![Morphing](https://i.imgur.com/x9btDDC.gif)
 ![AB_BagFace](https://i.imgur.com/S6mLVZK.gif)
-![AB_triangularbird](./AUevLbG.gif)
+![AB_triangularbird](docs/articles/Soft Robotsots/AUevLbG.gif)
 ![AB_ElectroCarpet](https://i.imgur.com/NRewKSb.gif)
 ![AB_Aspirator](https://i.imgur.com/AWZmEIC.gif)
 ![Worm_LB](https://i.imgur.com/1PSqOas.gif)
-![Butterfly_LB](./UMTVNtz.gif)
+![Butterfly_LB](docs/articles/Soft Robotsots/UMTVNtz.gif)
 
 ## Credits
 

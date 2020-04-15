@@ -1,13 +1,14 @@
 ---
 
+authors:    Jürg Lehni, Douglas Edric Stanley
 teachers:   Jürg Lehni, Douglas Edric Stanley
-assistant:  Nicolas Baldran
 students:   Gabriel Abergel, Leyla Baghirli, Aurélie Belle, Amsatou Diop, Laís Kunzendorff, Johan Pardo
+assistant:  Nicolas Baldran
 
 ---
 
 
-# thincking machines
+# Thincking Machines
 
 ::: intro
 
