@@ -28,19 +28,6 @@ cover: ""
 Soft Robots explores new forms of play when reconfigurable robots interact with humans and the world.
 ::: 
 
-::: credit
-
-Laure Krayenbuhl  
-Douglas Edric Stanley
-
-:::
-
-::: date
-
-10.04.2020
-
-:::
-
 ## Bestiary
 ![JP_Shifter](https://i.imgur.com/AO1wdFa.gif)
 ![JP_We are one](https://i.imgur.com/csHcq9x.gif)
@@ -48,9 +35,8 @@ Douglas Edric Stanley
 ![JP_Grub](https://i.imgur.com/hJnlkyt.gif)
 ![JP_Joyskin](https://i.imgur.com/TzXiuJD.gif)
 ![Morphing](https://i.imgur.com/x9btDDC.gif)
-![AB_BagFace](https://i.imgur.com/S6mLVZK.gif)
-![AB_triangularbird](https://i.imgur.com/5jeOfVi.gif)
-![AB_ElectroCarpet](https://i.imgur.com/NRewKSb.gif)
+![AB_triangularbird](https://i.imgur.com/fSYqsaC.gif)
+![AB_ElectroCarpet](https://i.imgur.com/nx6tZfR.gif)
 ![AB_Aspirator](https://i.imgur.com/AWZmEIC.gif)
 ![Worm_LB](https://i.imgur.com/1PSqOas.gif)
 ![Butterfly_LB](https://i.imgur.com/pzsYXEp.gif)

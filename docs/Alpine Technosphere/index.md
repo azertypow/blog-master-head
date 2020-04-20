@@ -33,3 +33,63 @@ The elements shown on this website reflects the material we collected and produc
 We spent several days in the Chamonix Valley, documenting the presence of different kinds of technologies (ski lift, roads, mountain vehicles such as snow plows and bobcats, former mines and quarries). Using field research methods such as photography, photo scanning techniques, video, sound recording, electromagnetic waves detection as well as drawings, we collected material that we turned into 3D pieces to express our observations. Some were interested in artificial snow machines, others in former mines, or glacial boulders turned into gravestones as well as the general atmosphere of the Valley.
 
 At the crossroads of design and ethnography, this workshop aimed to teach the importance of observation in the context of the environmental crisis. While designers are often asked to find “solutions”, we chose to take a step back and adopt a different approach. Our field trip aimed to understand local parameters and constraints of the man-made technosphere, in order to highlight the various ranges of technological issues at stake in a mountain context. We hope that such projects can add nuances about the future ways of living in the Alps.
+
+## Interview with the Alps
+
+::: vimeo https://vimeo.com/392232368
+Interview with the Alps
+
+Gabriel Abergel, Johan Pardo
+:::
+
+importer contenu pdf
+
+::: vimeo https://vimeo.com/392233275
+Interview with the Alps  
+(research)
+
+Gabriel Abergel, Johan Pardo
+:::
+
+::: vimeo https://vimeo.com/392233625
+Interview with the Alps  
+(research)
+
+Gabriel Abergel, Johan Pardo
+:::
+
+
+## Rock Station, Artificial Stones
+
+::: vimeo https://vimeo.com/392229089
+Rock Station
+Artificial Stones
+
+Amsatou Diop, Aurelie Belle
+:::
+
+importer contenu pdf
+
+::: vimeo https://vimeo.com/392225236
+Rock Station
+Artificial Stones  
+(research)
+
+Amsatou Diop, Aurelie Belle
+:::
+
+::: vimeo https://vimeo.com/392228733
+Rock Station
+Artificial Stones  
+(research)
+
+Amsatou Diop, Aurelie Belle
+:::
+
+::: vimeo https://vimeo.com/392227662
+Rock Station
+Artificial Stones  
+(research)
+
+Amsatou Diop, Aurelie Belle
+:::
