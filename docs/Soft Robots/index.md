@@ -20,6 +20,8 @@ date: 10.04.2020
 
 cover: ""
 
+cover-color: ""
+
 ---
 
 # Soft Robots

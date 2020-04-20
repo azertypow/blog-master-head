@@ -18,7 +18,9 @@ assistants:
     
 date: 10.04.2020
 
-cover: ""
+cover: "https://i.imgur.com/k1ZIXl9.gif"
+
+cover-color: "000000"
 
 ---
 
@@ -74,5 +76,5 @@ This collective project realized by first year from Master Media students at HEA
 
 
 
-![](https://i.imgur.com/k1ZIXl9.gif)
+
 -> ajouter en cover

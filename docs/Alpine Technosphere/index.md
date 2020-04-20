@@ -18,6 +18,8 @@ date: 10.04.2020
 
 cover:
 
+cover-color: ""
+
 ---
 
 # Alpine Technosphere
