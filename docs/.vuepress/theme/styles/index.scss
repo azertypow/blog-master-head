@@ -86,6 +86,7 @@ section {
 }
 
 @import "l-page";
+@import "l-ui";
 @import "v-app__nav";
 
 // l site
@@ -131,13 +132,9 @@ section {
   }
 }
 
-.l-site-home-link {
-  color: inherit;
-  text-decoration: none;
-}
-
 .icon.outbound {
   display: none !important;
 }
 
 //l site end
+

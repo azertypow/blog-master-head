@@ -6,34 +6,7 @@
 <template>
   <div id="v-app">
 
-    <nav class="v-app__nav">
-
-      <div class="v-app__nav__container">
-
-        <div class="v-app__nav__left"><a class="l-site-home-link" href="/">{{this.$site.title}}</a></div>
-
-        <div class="v-app__nav__center">
-
-          <div class="l-site-nav" :class="{'l-site-nav--open': $page.path === '/'}">
-
-            <div class="l-site-nav__title">{{this.siteNavTitle}}</div>
-            <ul class="l-site-nav__list">
-              <template v-for="page of $site.pages">
-                <li v-if="page.path !== '/' && page.title !== $page.title">
-                  <a :href="page.path">{{page.title}}</a>
-                </li>
-              </template>
-            </ul>
-
-          </div>
-
-        </div>
-
-        <div class="v-app__nav__right">mastermediadesign.ch</div>
-
-      </div>
-
-    </nav>
+    <MmdNav></MmdNav>
 
     <header ref="articleHeader"
             class="v-app__article-header">
@@ -51,7 +24,7 @@
 
       <section>
 
-        <ListOfStudents v-if="$page.frontmatter.students"></ListOfStudents>
+        <ListOfStudents v-if="listOfStudents"></ListOfStudents>
 
         <Content
                 ref="articlesContent"
@@ -76,9 +49,11 @@ import {isVue} from "../util"
 import {store} from "../enhanceApp"
 import ListOfStudents from "../components/ListOfStudents.vue"
 import HeaderPost from "../components/HeaderPost.vue"
+import {IPageFrontmatter} from "../../IPageFrontmatter"
+import MmdNav from "../components/MmdNav.vue"
 
 @Component({
-  components: {HeaderPost, ListOfStudents},
+  components: {MmdNav, HeaderPost, ListOfStudents},
   mounted(this: Layout) {
     this.$nextTick(() => {
       this.updateHeaderVariables()
@@ -110,9 +85,8 @@ export default class Layout extends Vue {
     if (this.storeData.imageGallery !== null) store.clearImageGallery()
   }
 
-  get siteNavTitle() {
-    const beforeTitle = this.$page.path === '/' ? "" : "projects / "
-    return beforeTitle + this.$page.title
+  get listOfStudents(): string | null {
+    return (this.$page.frontmatter as IPageFrontmatter).students || null
   }
 
   setArticleTitleFromElement(Element: Element) {
