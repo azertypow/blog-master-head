@@ -57,7 +57,7 @@
     .v-list-of-students {
         position: absolute;
         left: 0;
-        top: 28px;
+        top: 0;
         font-family: $font-serif;
         font-size: 15px;
         line-height: 20px;
