@@ -29,9 +29,9 @@ cover-color: "000000"
 
 ::: intro
 
-Thinking Machines revisits the concept of “personal computers” in the age of neural networks.
+Thinking Machines radically transforms designers' workflow by revisiting the concept of “personal computers” in the age of neural networks.
 
-How the creation of personalised assistants can reshape designers' creative workflow? What is the future of automation if the field of graphic design? 
+
 
 
 :::
@@ -40,15 +40,19 @@ How the creation of personalised assistants can reshape designers' creative work
 Video © [Vincent de Vevey](http://vincentdevevey.com)
 :::
 
-## A Loom as an automated design workflow 
+While industrial automation finishes the final touches of replacing physical labor with computer-controlled machines, it is now the turn of the “white-collar” jobs to be replaced by software robots. Writers , mid-level managers, commercial vendors, medical analysts  — all of these fields, along with many others, are in the process of being automated by machines. 
 
-Thinking Machines is a Fictional Design studio in which the publishing classic workflow has been radically transformed by neural networks and personal computers.A workflow materialized in an interactive loom installation that operates on machine learning, puppet shadows, text generator, contemporary tools for the web and voice recognition  
+Design is an obvious ‘next target’ of this automation process.
+ 
+This collective project realized by first year students from Master Media at HEAD – Genève asks what new design strategies could re-engage us with the humanist principles at work from the beginnings of computer science.
+ 
+ ## A Loom to generate stories  
+ 
+The Loom is an an automated publishing  workflow that operates on machine learning, hand shadows, text generator, tools for the web and voice recognition.  
 
-While industrial automation finishes the final touches of replacing physical labor with computer-controlled machines, it is now the turn of the “white-collar” jobs to be replaced by software robots. Writers , mid-level managers, commercial vendors, medical analysts  — all of these fields, along with many others, are in the process of being automated by machines. Design is an obvious ‘next target’ of this automation process.
+It starts with a perforated card to fill and some (not so random) questions to answer. You are then guided from one station to the next to create your own story. Each station unlocks a new interaction from generating a text with an AI, drawing your layout with a pen or creating your visuals with hand shadow. The result is a unique small booklet co-created by you and a series of digital assistants.
 
-The automated workflow starts with a perforated card to fill and some (not so random) questions to answer. You will then be guided from one station to another to create your own fairytale : from the generation of the text with an AI, drawing your layout live, to creating your illustrations with shadows and printing your story in a small booklet. Each time interacting in a new way with a digital assistant, each time discovering a new gesture and curious interface. 
-
-With a certain sense of irony, The Loom outlines a stark, even dystopian view of the future of visual communication. But deep downs it wishes to return to a number of early principles that gave birth to the computer sciences, personal computers, open source communities, and a world wide web of collective collaboration.
+With a certain sense of irony, The Loom outlines a stark, even dystopian view of the future of visual communication. But deep downs, The Loom wishes to return to a number of early principles that gave birth to the computer sciences, personal computers, open source communities, and a world wide web of collective collaboration.
 
 
 -> Galery avec les export de l'illustrator des ombre chinoises
@@ -71,7 +75,7 @@ With a certain sense of irony, The Loom outlines a stark, even dystopian view of
 
 -> Galery avec poster, et installation image fix de the loom
 
-This collective project realized by first year from Master Media students at HEAD–Genève asks what new design strategies could re-engage us with the humanist principles at work from the beginnings of design but also from the beginnings of computer science.
+
 
 
 
