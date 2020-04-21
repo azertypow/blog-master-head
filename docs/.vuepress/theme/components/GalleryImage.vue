@@ -52,7 +52,7 @@
     }
 
     .v-gallery-image__title {
-        font-family: $font-family-title;
+        font-family: $font-serif;
         font-weight: 900;
         font-size: 45px;
         line-height: 50px;

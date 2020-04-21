@@ -100,7 +100,7 @@
         left: 0;
         transform: translate(-$decal);
         width: calc(100% + #{$decal});
-        font-family: $font-family-title;
+        font-family: $font-serif;
         font-size: 2em;
         line-height: 4rem;
     }

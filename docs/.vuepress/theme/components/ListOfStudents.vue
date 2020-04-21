@@ -58,7 +58,7 @@
         position: absolute;
         left: 0;
         top: 28px;
-        font-family: $font-family-title;
+        font-family: $font-serif;
         font-size: 15px;
         line-height: 20px;
         font-weight: 800;

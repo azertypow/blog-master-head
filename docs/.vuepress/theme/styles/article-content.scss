@@ -32,7 +32,7 @@
   }
 
   .l-page__credit {
-    font-family: $font-family-title;
+    font-family: $font-serif;
     text-align: right;
     font-weight: 600;
     font-size: 45px;
@@ -44,7 +44,7 @@
   }
 
   .l-page__date {
-    font-family: $font-family-title;
+    font-family: $font-serif;
     text-align: right;
     font-weight: 600;
     font-size: 22px;
@@ -105,7 +105,7 @@
 
     &:hover:after {
       content: attr(data-alt);
-      font-family: "Spectral", serif;
+      font-family: $font-serif;
       line-height: 35px;
       font-size: 35px;
       font-weight: 700;
