@@ -1,13 +1,13 @@
+// params adn tools
 @import "params";
-
-// tools
-@import "tool-grid";
+@import "grid";
 
 // init
 @import "init";
 @import "init-vuepress-fix";
 
 // layout
+@import "l-app-content";
 @import "l-article-content";
 @import "l-page";
 @import "l-site";
