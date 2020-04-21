@@ -1,140 +1,16 @@
 @import "params";
-@import "grid";
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  background-color: $site-color;
-  color: invert($site-color);
-}
+// tools
+@import "tool-grid";
 
-html {
-  font-size: 10px;
-  line-height: 20px;
-}
+// init
+@import "init";
+@import "init-vuepress-fix";
 
-body {
-  font-family: $font-family-default;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  padding-left: $grid-gutter-width;
-  padding-right: $grid-gutter-width;
-  box-sizing: border-box;
-}
-
-@import "./article-content";
-
-h1 {
-  font-size: 3.75em;
-  line-height: 6rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 33px;
-  line-height: 37.5px;
-  margin-top: 75px;
-  margin-bottom: 25px;
-  font-weight: 400;
-}
-
-h3 {
-  font-size: 1.75em;
-  line-height: 3rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-weight: 500;
-}
-
-h4 {
-  font-size: 1em;
-  line-height: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-weight: 500;
-}
-
-h5 {
-  font-size: .75em;
-  line-height: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-weight: 400;
-}
-
-h6 {
-  font-size: .75em;
-  line-height: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-weight: 300;
-}
-
-p {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-section {
-  //border: solid 1px;
-}
-
+// layout
+@import "l-article-content";
 @import "l-page";
+@import "l-site";
 @import "l-ui";
-@import "v-app__nav";
 
-// l site
-.l-site-nav{
-  position: relative;
-  user-select: none;
-}
-
-.l-site-nav__title{
-
-}
-
-.l-site-nav__list{
-  position: absolute;
-  top: 20px;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  padding-top: 20px;
-  white-space: nowrap;
-
-  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
-  pointer-events: none;
-  opacity: 0;
-  transform: translate3d(0, -3px, 0);
-
-  li {
-    display: block;
-
-    a {
-      text-decoration: none;
-      color: black;
-    }
-  }
-}
-
-.l-site-nav:hover,
-.l-site-nav.l-site-nav--open {
-  .l-site-nav__list {
-    pointer-events: auto;
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.icon.outbound {
-  display: none !important;
-}
-
-//l site end
 

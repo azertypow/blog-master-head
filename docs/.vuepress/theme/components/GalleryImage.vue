@@ -26,7 +26,7 @@
 
 <style lang="scss" scoped>
     @import "../styles/params";
-    @import "../styles/grid";
+    @import "docs/.vuepress/theme/styles/tool-grid";
 
     .v-gallery-image {
         position: fixed;

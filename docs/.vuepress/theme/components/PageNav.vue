@@ -1,10 +1,10 @@
 <template>
-    <nav class="v-mmd-nav v-app__nav">
-        <div class="v-app__nav__container">
+    <nav class="v-page-nav">
+        <div class="v-page-nav__container">
 
-            <div class="v-app__nav__left"><a class="l-link--no-style" href="/">{{this.$site.title}}</a></div>
+            <div class="v-page-nav__left"><a class="l-link--no-style" href="/">{{this.$site.title}}</a></div>
 
-            <div class="v-app__nav__center">
+            <div class="v-page-nav__center">
 
                 <div class="l-site-nav" :class="{'l-site-nav--open': $page.path === '/'}">
 
@@ -21,7 +21,7 @@
 
             </div>
 
-            <div class="v-app__nav__right">
+            <div class="v-page-nav__right">
                 <a href="https://mastermediadesign.ch" target="_blank" class="l-link--no-style">mastermediadesign.ch</a>
             </div>
 
@@ -37,11 +37,11 @@
     @Component({
       created(this: Layout) {
         this.$nextTick(() => {
-          console.log("MmdNav: next created")
+          console.log("PageNav: next created")
         })
       },
     })
-    export default class MmdNav extends Vue {
+    export default class PageNav extends Vue {
       get siteNavTitle() {
         return this.$page.path === '/' ? "projects /" : this.$page.relativePath.replace(/\/index.md$/, " /")
       }
@@ -49,7 +49,42 @@
 </script>
 
 <style lang="scss" scoped>
-    .v-mmd-nav {
+    @import "../styles/params";
+    @import "../styles/tool-grid";
 
+    .v-page-nav {
+        padding-left: $grid-gutter-width;
+        padding-right: $grid-gutter-width;
+        box-sizing: border-box;
+        position: fixed;
+        background-color: $site-color;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100000;
+    }
+
+    .v-page-nav__container {
+        @include column-container;
+        width: 100%;
+        height: $nav-height;
+
+        max-width: 1280px;
+        box-sizing: border-box;
+        margin: auto;
+    }
+
+    .v-page-nav__left {
+        @include grid-coll-number(2, 12);
+    }
+
+    .v-page-nav__center {
+
+    }
+
+    .v-page-nav__right {
+        @include grid-coll-number(2, 12);
+        margin-left: auto;
+        text-align: right;
     }
 </style>

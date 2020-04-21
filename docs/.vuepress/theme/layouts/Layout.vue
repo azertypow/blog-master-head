@@ -1,19 +1,9 @@
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap');
-</style>
-
 <template>
   <div id="v-app">
 
-    <MmdNav></MmdNav>
+    <PageNav></PageNav>
 
-    <header ref="articleHeader"
-            class="v-app__article-header">
-
-            <HeaderPost></HeaderPost>
-
-    </header>
+    <PageHeader></PageHeader>
 
     <main>
 
@@ -28,7 +18,7 @@
 
         <Content
                 ref="articlesContent"
-                class="v-app__article-content ts-fixed-repper"
+                class="l-article-content ts-fixed-repper"
         />
       </section>
     </main>
@@ -38,7 +28,7 @@
     </transition>
 
     <footer>
-<!--      <p>footer</p>-->
+      <p>footer</p>
     </footer>
   </div>
 </template>
@@ -48,17 +38,16 @@ import { Component, Vue } from 'vue-property-decorator'
 import {isVue} from "../util"
 import {store} from "../enhanceApp"
 import ListOfStudents from "../components/ListOfStudents.vue"
-import HeaderPost from "../components/HeaderPost.vue"
+import PageHeader from "../components/PageHeader.vue"
 import {IPageFrontmatter} from "../../IPageFrontmatter"
-import MmdNav from "../components/MmdNav.vue"
+import PageNav from "../components/PageNav.vue"
 
 @Component({
-  components: {MmdNav, HeaderPost, ListOfStudents},
+  components: {PageNav, PageHeader, ListOfStudents},
   mounted(this: Layout) {
     this.$nextTick(() => {
       this.updateHeaderVariables()
       this.setImageLayout()
-      this.setImageInPostStoreList()
       console.log("next mounted")
     })
 
@@ -117,24 +106,6 @@ export default class Layout extends Vue {
       this.setArticleTitleFromElement(contentInstance.$el)
 
     }
-  }
-
-  setImageInPostStoreList() {
-
-    const imgInPost = this.$el.querySelectorAll("img")
-
-    const arrayOfImgPostUrl: HTMLImageElement[] = []
-
-    imgInPost.forEach(img => {
-
-      if(img.src.length > 0) {
-        arrayOfImgPostUrl.push(img)
-      }
-
-    })
-
-    store.setImagesInCurrentPage(arrayOfImgPostUrl)
-
   }
 
   setImageLayout() {
@@ -197,6 +168,16 @@ export default class Layout extends Vue {
     })
 
   }
+
+  // todo: random position for home over images
+  // randomPosition(): {x: number, y: number, z: number} {
+  //   return {
+  //     x: Math.random() * this.$el.getBoundingClientRect().width,
+  //     y: Math.random() * this.$el.getBoundingClientRect().height,
+  //     z: Math.random() * 100,
+  //   }
+  // }
+
 }
 </script>
 

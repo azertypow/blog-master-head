@@ -11,7 +11,7 @@
             <slot></slot>
         </div>
 
-        <button class="vi__play" @click="openVimeo">play video</button>
+<!--        <button class="vi__play" @click="openVimeo">play video</button>-->
 
     </section>
 </template>
@@ -21,7 +21,9 @@
 
     @Component({
       mounted(this: Vimeo) {
-        this.setVimeoPlayer()
+        this.setVimeoPlayer().then(() => {
+          this.openVimeo()
+        })
       }
     })
     export default class Vimeo extends Vue {
@@ -45,6 +47,7 @@
 
       openVimeo() {
         if(this.videoInfo) {
+          console.log(this.videoInfo)
           const vimeoContainer = this.$refs.vimeoPlayer
           if(vimeoContainer instanceof HTMLElement) {
             const vimeoIframeContainer = document.createElement("div")
@@ -116,6 +119,7 @@
         height: 100%;
         background-color: #e2e2e2;
         /*background-repeat: no-repeat;*/
+        display: none;
     }
 
     .vi__play {

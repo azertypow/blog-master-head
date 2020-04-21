@@ -26,23 +26,6 @@ module.exports = {
     [
       "vuepress-plugin-container",
       {
-        type: 'credit',
-        before: '<div class="l-page__credit">',
-        after: '</div>',
-      },
-    ],
-    [
-      "vuepress-plugin-container",
-      {
-        type: 'date',
-        before: '<div class="l-page__date">',
-        after: '</div>',
-      },
-
-    ],
-    [
-      "vuepress-plugin-container",
-      {
         type: 'vimeo',
         before: info => `<Vimeo src="${info}" >`,
         after: '</Vimeo>',
