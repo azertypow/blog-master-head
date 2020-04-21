@@ -50,7 +50,7 @@
 
 <style lang="scss" scoped>
     @import "../styles/params";
-    @import "../styles/tool-grid";
+    @import "../styles/grid";
 
     .v-page-nav {
         padding-left: $grid-gutter-width;

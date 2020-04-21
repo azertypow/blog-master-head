@@ -5,11 +5,11 @@
 
     <PageHeader></PageHeader>
 
-    <main>
+    <main class="l-app-content">
 
       <h1
               v-if="$page.path !== '/'"
-              class="v-app__article-title"
+              class="l-app-content__title"
               v-html="this.articleTitle"></h1>
 
       <section>
