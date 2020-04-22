@@ -37,61 +37,111 @@ We spent several days in the Chamonix Valley, documenting the presence of differ
 At the crossroads of design and ethnography, this workshop aimed to teach the importance of observation in the context of the environmental crisis. While designers are often asked to find “solutions”, we chose to take a step back and adopt a different approach. Our field trip aimed to understand local parameters and constraints of the man-made technosphere, in order to highlight the various ranges of technological issues at stake in a mountain context. We hope that such projects can add nuances about the future ways of living in the Alps.
 
 ## Interview with the Alps
+###### by Gabriel Abergel and Johan Pardo
 
 ::: vimeo https://vimeo.com/392232368
+
 Interview with the Alps
 
 Gabriel Abergel, Johan Pardo
+
 :::
 
-importer contenu pdf
+
+Exploration and data collection in the Chamonix valley, as part of research on the technosphere and its hybridization with nature.  
+Guided by the senses, we followed the sounds of the valley, from the urban sounds to the sounds of nature, while identifying the images associated with them. During this 3-day interview of the valley, we were able to reveal, thanks to the different samples taken, a soundscape that we showed through a 3-dimensional visualization.
+
+
+![](https://i.imgur.com/HTEnRFG.jpg)
+![](https://i.imgur.com/JLa54TP.jpg)
+
 
 ::: vimeo https://vimeo.com/392233275
+
 Interview with the Alps  
 (research)
 
 Gabriel Abergel, Johan Pardo
+
 :::
 
+
 ::: vimeo https://vimeo.com/392233625
+
 Interview with the Alps  
 (research)
 
 Gabriel Abergel, Johan Pardo
+
 :::
 
 
 ## Rock Station, Artificial Stones
+###### by Amsatou Diop and Aurelie Belle
 
 ::: vimeo https://vimeo.com/392229089
+
 Rock Station
 Artificial Stones
 
 Amsatou Diop, Aurelie Belle
+
 :::
 
-importer contenu pdf
+
+--> small project description
+
 
 ::: vimeo https://vimeo.com/392225236
+
 Rock Station
 Artificial Stones  
 (research)
 
 Amsatou Diop, Aurelie Belle
+
 :::
+
+
+
 
 ::: vimeo https://vimeo.com/392228733
+
 Rock Station
 Artificial Stones  
 (research)
 
 Amsatou Diop, Aurelie Belle
+
 :::
+
+
+
+
 
 ::: vimeo https://vimeo.com/392227662
+
 Rock Station
 Artificial Stones  
 (research)
 
 Amsatou Diop, Aurelie Belle
+
 :::
+
+
+## Materia Prima
+###### by Laís Kunzendorff
+
+![](https://i.imgur.com/0G0lWjs.jpg)
+
+![](https://i.imgur.com/PY9YP4u.jpg)
+
+![](https://i.imgur.com/d1b0MjC.jpg)
+
+
+--> small project description
+
+![](https://i.imgur.com/SxywkGV.jpg)
+![](https://i.imgur.com/AOBBW9S.jpg)
+![](https://i.imgur.com/Hj4Wsnc.jpg)
