@@ -20,7 +20,7 @@ date: 10.04.2020
 
 cover: "https://i.imgur.com/k1ZIXl9.gif"
 
-cover-color: "000000"
+cover-color: "#000000"
 
 ---
 
