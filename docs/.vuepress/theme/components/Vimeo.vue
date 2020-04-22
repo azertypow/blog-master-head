@@ -3,15 +3,12 @@
 
         <div class="vi__vimeo-container" ref="vimeoContainer">
             <div class="vi__vimeo-player" ref="vimeoPlayer"></div>
-            <div class="vi__vimeo-cover" ref="vimeoCover"></div>
         </div>
 
         <div class="vi__description"
              v-if="$slots.default">
             <slot></slot>
         </div>
-
-<!--        <button class="vi__play" @click="openVimeo">play video</button>-->
 
     </section>
 </template>
@@ -37,12 +34,9 @@
       async setVimeoPlayer() {
         console.log(this.$refs.vimeoContainer)
 
-        const fetchResponse = await fetch(`https://vimeo.com/api/oembed.json?url=${this.src}&width=500`)
+        const fetchResponse = await fetch(`https://vimeo.com/api/oembed.json?url=${this.src}&byline=false&color=FFFFFF&title=false&transparent=false`)
 
         this.videoInfo = await fetchResponse.json()
-
-        const vimeoCover = this.$refs.vimeoCover
-        if (vimeoCover instanceof HTMLDivElement) vimeoCover.style.backgroundImage = `url(${this.videoInfo?.thumbnail_url})`
       }
 
       openVimeo() {
@@ -50,9 +44,7 @@
           console.log(this.videoInfo)
           const vimeoContainer = this.$refs.vimeoPlayer
           if(vimeoContainer instanceof HTMLElement) {
-            const vimeoIframeContainer = document.createElement("div")
-            vimeoIframeContainer.innerHTML = this.videoInfo.html
-            vimeoContainer.appendChild(vimeoIframeContainer)
+            vimeoContainer.innerHTML = this.videoInfo.html
           }
         }
       }
@@ -88,58 +80,41 @@
     @import "../styles/params";
 
     .v-vimeo {
-        height: 20rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
         position: relative;
     }
 
     .vi__description {
-        $decal: $grid-gutter-width * 2;
-
-        position: absolute;
+        position: relative;
         overflow: hidden;
         bottom: 1rem;
         left: 0;
-        transform: translate(-$decal);
-        width: calc(100% + #{$decal});
         font-family: $font-serif;
-        font-size: 2em;
-        line-height: 4rem;
+        display: flex;
+
+        p + p {
+            padding-left: $grid-gutter-width * 2;
+        }
+    }
+
+    .vi__vimeo-player {
+        background: black;
     }
 
     .vi__vimeo-container {
-        width: 100%;
-        height: 100%;
         position: relative;
-    }
-
-    .vi__vimeo-cover {
-        width: 100%;
-        height: 100%;
-        background-color: #e2e2e2;
-        /*background-repeat: no-repeat;*/
-        display: none;
-    }
-
-    .vi__play {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 0;
-        line-height: 2rem;
-        background: white;
-        border-color: black;
-        cursor: pointer;
     }
 </style>
 
 <style lang="scss">
+    @import "../styles/params";
     .vi__vimeo-container {
         iframe {
-            width: 100% !important;
-            height: 100% !important;
+            display: block;
+            width: 100%;
+            height: calc( 75vh - #{$nav-height} );
+            margin: auto;
         }
     }
 </style>
