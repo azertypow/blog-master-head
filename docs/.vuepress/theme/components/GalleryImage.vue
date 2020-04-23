@@ -34,8 +34,8 @@
         left: 0;
         width: 100%;
         height: calc( 100% - 60px);
-        background: rgba(255, 255, 255, 0.75);
-
+        background: rgba(255, 255, 255, 0.9);
+        z-index: 100;
         box-sizing: border-box;
 
         cursor: pointer;
