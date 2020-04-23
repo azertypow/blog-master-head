@@ -45,7 +45,7 @@
   }
 
   a {
-    color: inherit;
+    @extend .l-ui--link;
 
     > svg {
       display: none;
