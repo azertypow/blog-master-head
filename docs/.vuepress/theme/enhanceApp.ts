@@ -18,7 +18,7 @@ export const store = {
 }
 
 const enhanceApp: EnhanceApp = ({ Vue }) => {
-  require("./styles/index.scss")
+  require("./styles/_main.scss")
 }
 
 export default enhanceApp
