@@ -27,9 +27,8 @@
       <GalleryImage class="to-animate" v-if="storeData.imageGallery" :prop="storeData.imageGallery"></GalleryImage>
     </transition>
 
-    <footer>
-      <p>footer</p>
-    </footer>
+    <Footer></Footer>
+
   </div>
 </template>
 
@@ -41,9 +40,10 @@ import ListOfStudents from "../components/ListOfStudents.vue"
 import PageHeader from "../components/PageHeader.vue"
 import {IPageFrontmatter} from "../../IPageFrontmatter"
 import PageNav from "../components/PageNav.vue"
+import Footer from "../components/Footer.vue"
 
 @Component({
-  components: {PageNav, PageHeader, ListOfStudents},
+  components: {Footer, PageNav, PageHeader, ListOfStudents},
   mounted(this: Layout) {
     this.$nextTick(() => {
       this.updateHeaderVariables()

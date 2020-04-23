@@ -2,7 +2,7 @@
     <nav class="v-page-nav">
         <div class="v-page-nav__container">
 
-            <div class="v-page-nav__left"><a class="l-link--no-style" href="/">{{this.$site.title}}</a></div>
+            <div class="v-page-nav__left"><a class="l-ui--link-no-style" href="/">{{this.$site.title}}</a></div>
 
             <div class="v-page-nav__center">
 
@@ -22,7 +22,7 @@
             </div>
 
             <div class="v-page-nav__right">
-                <a href="https://mastermediadesign.ch" target="_blank" class="l-link--no-style">mastermediadesign.ch</a>
+                <a href="https://mastermediadesign.ch" target="_blank" class="l-ui--link-no-style">mastermediadesign.ch</a>
             </div>
 
         </div>
