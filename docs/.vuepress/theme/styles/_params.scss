@@ -1,9 +1,12 @@
+// colors
 $site-theme-color: white;
 $site-color: invert($site-theme-color);
 
+// grid
+$line-height: 24px;
+$grid-gutter-width: $line-height;
 
-$grid-gutter-width: 20px;
-
+// font
 $font-serif: 'Spectral', serif;
 $font-family-default: 'Inter', sans-serif;
 
