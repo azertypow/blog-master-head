@@ -1,4 +1,6 @@
-$site-color: white;
+$site-theme-color: white;
+$site-color: invert($site-theme-color);
+
 
 $grid-gutter-width: 20px;
 

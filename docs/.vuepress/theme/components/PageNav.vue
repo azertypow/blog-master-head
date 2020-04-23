@@ -57,7 +57,7 @@
         padding-right: $grid-gutter-width;
         box-sizing: border-box;
         position: fixed;
-        background-color: $site-color;
+        background-color: $site-theme-color;
         top: 0;
         left: 0;
         width: 100%;
