@@ -90,7 +90,6 @@
         overflow: hidden;
         bottom: 1rem;
         left: 0;
-        font-family: $font-serif;
         display: flex;
 
         p + p {
