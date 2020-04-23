@@ -7,6 +7,10 @@
   font-size: 45px;
   line-height: 50px;
 
+  > *:first-child {
+    margin-top: 0;
+  }
+
   + h2 {
     margin-top: 50px;
   }
