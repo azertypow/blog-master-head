@@ -75,6 +75,8 @@ With a certain sense of irony, The Loom outlines a stark, even dystopian view of
 
 -> Galery avec poster, et installation image fix de the loom
 
+![](https://i.imgur.com/rxjBHk6.jpg)
+![](https://i.imgur.com/9o3olgD.jpg)
 
 
 
