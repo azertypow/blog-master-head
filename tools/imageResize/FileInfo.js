@@ -8,8 +8,23 @@ export class FileInfo {
                     directoryPath = "",
                     fileName = "",
                 }) {
-        this.directoryPath = directoryPath
+        this.directoryPath = path.resolve( directoryPath )
         this.fileName = fileName
+    }
+
+    /** @return {string} */
+    get path() {
+        return path.resolve( this.directoryPath, this.fileName )
+    }
+
+    /** @return {string} */
+    getRelativePath(from = "./") {
+        return path.relative(from, this.path)
+    }
+
+    /** @return {string} */
+    getRelativeDirectoryPath(from = "./") {
+        return path.relative(from, this.directoryPath)
     }
 
     /**

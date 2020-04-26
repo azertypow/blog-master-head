@@ -1,46 +1,90 @@
-import {readdirSync, readFileSync, readFile} from "fs"
+import {readdirSync, readFileSync, readFile, Dirent} from "fs"
 import path from "path"
 import { FileInfo } from "./FileInfo.js"
 import saveImageFromUrl from "./saveImageFromUrl.js"
+import sharp from "sharp"
 
 async function main() {
 
-    const mdFilesDirectoryPath = "./docs/"
-    const directoryForImageLoadedPath = "./resources/images/"
+    const postDirPath = "./docs/"
+    const dirPathForImageLoaded = "./resources/"
 
-    const filesInfoInDirectory = getDirentIsFilesRecursively(mdFilesDirectoryPath)
+    /**
+     * array of markdown files in doc ref directory
+     * @type {FileInfo[]}
+     */
+    const markdownFileArray = getFilesDirentRecursively( postDirPath ).filter( fileInfo => {
+        return fileInfo.hasMarkdownExtension
+    })
 
-    for(const fileInfo of filesInfoInDirectory) {
-        if( fileInfo.hasMarkdownExtension ) {
+    console.log( markdownFileArray )
 
-            const mdContentFilePath = path.resolve( fileInfo.directoryPath, fileInfo.fileName )
+    for(const markdownFile of markdownFileArray) {
 
-            readFile(mdContentFilePath, (err, data) => {
+        readFile(markdownFile.path, async (err, data) => {
 
-                const contentFile = data.toString()
+            const contentFile = data.toString()
 
-                // const imageMarkdown = contentFile.match(/(?:!\[(.*?)\]\((.*?)\))/gi)
-                const imageLinks = contentFile.match(/(http(s?):)([/|.|\w|\s|-])*\.(?:jpe?g|gif|png)/gi)
+            // const imageMarkdown = contentFile.match(/(?:!\[(.*?)\]\((.*?)\))/gi) // markdown image
+            const imageLinks = contentFile.match(/(http(s?):)([/|.|\w|\s|-])*\.(?:jpe?g|gif|png)/gi) // all image links
 
-                const pathDirectoryToSaveImageFromMDFile = path.relative("./", path.resolve( fileInfo.directoryPath ) )
+            if( imageLinks ) {
 
-                if( imageLinks ) {
+                console.info(`${imageLinks.length} images find in ${markdownFile.getRelativePath()}`)
+                let fileImageLoaded = 0
 
-                    console.info(`${imageLinks.length} images find in ${fileInfo.fileName}`)
+                for ( const link of imageLinks ) {
 
-                    for( const link of imageLinks ) {
-                        saveImageFromUrl({
-                            imageToSaveDirectoryPath: path.resolve( directoryForImageLoadedPath, pathDirectoryToSaveImageFromMDFile ),
+                    const loadedImage = new FileInfo(await saveImageFromUrl({
+                            imageToSaveDirectoryPath: path.resolve( dirPathForImageLoaded, markdownFile.getRelativeDirectoryPath( postDirPath ) ),
                             imageUrl: link,
-                        }).then(value => {
-                            console.log("value: ", value)
                         })
-                    }
+                    )
+                    fileImageLoaded++
+                    console.info(`${fileImageLoaded} / ${imageLinks.length} images loaded for ${markdownFile.getRelativePath()}`)
+
+                    const resizeImagePath_icon          = path.resolve( loadedImage.directoryPath, `icon-${loadedImage.fileName}` )
+                    const resizeImagePath_small         = path.resolve( loadedImage.directoryPath, `small-${loadedImage.fileName}` )
+                    const resizeImagePath_smallGrey     = path.resolve( loadedImage.directoryPath, `smallGrey-${loadedImage.fileName}` )
+                    const resizeImagePath_medium        = path.resolve( loadedImage.directoryPath, `medium-${loadedImage.fileName}` )
+                    const resizeImagePath_mediumGrey    = path.resolve( loadedImage.directoryPath, `mediumGrey-${loadedImage.fileName}` )
+
+                    sharp(loadedImage.path).resize({
+                        width: 10,
+                    })
+                        .toFile(resizeImagePath_icon)
+
+                    sharp(loadedImage.path).resize({
+                        width: 300,
+                    })
+                        .toFile(resizeImagePath_small)
+
+                    sharp(loadedImage.path).resize({
+                        width: 300,
+                    })
+                        .grayscale(true)
+                        .toFile(resizeImagePath_smallGrey)
+
+                    sharp(loadedImage.path).resize({
+                        width: 600,
+                    })
+                        .toFile(resizeImagePath_medium)
+
+                    sharp(loadedImage.path).resize({
+                        width: 600,
+                    })
+                        .grayscale(true)
+                        .toFile(resizeImagePath_mediumGrey)
+
                 }
 
-            })
 
-        }
+                console.info(`image import and resize process ended for ${markdownFile.getRelativePath()}`)
+
+            }
+
+        })
+
     }
 
 
@@ -51,32 +95,37 @@ main()
  * @return {FileInfo[]}
  * @param {string} directoryPath
  */
-function getDirentIsFilesRecursively(directoryPath) {
+function getFilesDirentRecursively(directoryPath) {
+
+    directoryPath =  path.relative( "./", directoryPath ) // clean path
 
     /** @type {FileInfo[]} */
-    let arrayOfDirentIsFile = []
+    let filesDirentArray = []
 
-    const filePath = path.resolve(directoryPath)
-    const arrayOfDirentFile = readdirSync( filePath, { withFileTypes: true })
+    /**
+     * @type {Dirent[]}
+     */
+    const direntArray = readdirSync( directoryPath, { withFileTypes: true })
 
-    for ( const direntFile of arrayOfDirentFile ) {
+    for ( const dirent of direntArray ) {
 
-        if( direntFile.isDirectory() ) {
+        if( dirent.isDirectory() ) {
 
-            const pathOfDirentFile = path.resolve( directoryPath, direntFile.name )
-            const arrayOfDirentIsFileInChildFolder = getDirentIsFilesRecursively( pathOfDirentFile )
-            arrayOfDirentIsFile = arrayOfDirentIsFile.concat(arrayOfDirentIsFileInChildFolder)
+            const pathOfDirentFile = path.join( directoryPath, dirent.name )
+            const arrayOfDirentIsFileInChildFolder = getFilesDirentRecursively( pathOfDirentFile )
+            filesDirentArray = filesDirentArray.concat(arrayOfDirentIsFileInChildFolder)
 
-        } else if( direntFile.isFile() ) {
+        } else if( dirent.isFile() ) {
 
-            arrayOfDirentIsFile.push(new FileInfo({
-                    directoryPath: filePath,
-                    fileName: direntFile.name,
+            filesDirentArray.push(new FileInfo({
+                    directoryPath: directoryPath,
+                    fileName: dirent.name,
                 }),
             )
 
         }
     }
 
-    return arrayOfDirentIsFile
+    return filesDirentArray
 }
+
