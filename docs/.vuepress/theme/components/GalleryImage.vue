@@ -33,7 +33,7 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        height: calc( 100% - 60px);
+        height: calc( 100% - #{$nav-height});
         background: rgba(255, 255, 255, 0.9);
         z-index: 100;
         box-sizing: border-box;
@@ -67,6 +67,6 @@
         top: 0;
         left: 0;
         box-sizing: border-box;
-        padding: 0 60px 60px 60px;
+        padding: 0 $nav-height $nav-height $nav-height;
     }
 </style>
