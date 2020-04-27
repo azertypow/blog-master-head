@@ -41,9 +41,10 @@ import PageHeader from "../components/PageHeader.vue"
 import {IPageFrontmatter} from "../../IPageFrontmatter"
 import PageNav from "../components/PageNav.vue"
 import Footer from "../components/Footer.vue"
+import GalleryImage from "../components/GalleryImage.vue"
 
 @Component({
-  components: {Footer, PageNav, PageHeader, ListOfStudents},
+  components: {Footer, PageNav, PageHeader, ListOfStudents, GalleryImage},
   mounted(this: Layout) {
     this.$nextTick(() => {
       this.setImgLazyLoad()
