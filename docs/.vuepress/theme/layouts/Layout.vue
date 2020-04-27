@@ -77,15 +77,15 @@ export default class Layout extends Vue {
 
   setArticleTitleFromElement(Element: Element) {
 
-    this.articleTitle = this.$siteTitle || ""
-    this.articleTitleRefElementInContent = undefined
+    this.articleTitle = this.$page.title || ""
 
-    if(Element.firstChild instanceof HTMLHeadingElement) {
-      this.articleTitleRefElementInContent = Element.firstChild
-      this.articleTitle = Element.firstChild.innerHTML
+    if (
+      Element.firstElementChild instanceof HTMLHeadingElement &&
+      Element.firstElementChild.innerText === this.articleTitle
+    ) {
+      Element.firstElementChild.remove()
     }
 
-    if(this.articleTitleRefElementInContent !== void(0)) this.articleTitleRefElementInContent.style.display = "none"
   }
 
   updateHeaderVariables() {
