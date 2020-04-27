@@ -46,6 +46,7 @@ import Footer from "../components/Footer.vue"
   components: {Footer, PageNav, PageHeader, ListOfStudents},
   mounted(this: Layout) {
     this.$nextTick(() => {
+      this.setImgLazyLoad()
       this.updateHeaderVariables()
       this.setImageLayout()
       console.log("next mounted")
@@ -106,6 +107,40 @@ export default class Layout extends Vue {
       this.setArticleTitleFromElement(contentInstance.$el)
 
     }
+  }
+
+  setImgLazyLoad() {
+
+    const articleContainer = this.$refs["articlesContent"] as Vue
+    const imgInContent = articleContainer.$el.querySelectorAll("img")
+
+    imgInContent.forEach(imageElement => {
+      const originSrc = imageElement.src
+      imageElement.dataset.src = originSrc
+
+      imageElement.src = ""
+
+      const fileName = originSrc.split("/").pop()
+
+      const smallImageName = "icon-" + fileName
+
+      const smallImagePath = `http://distortion.mastermediadesign.ch/resources${this.$page.path}${smallImageName}`
+
+      console.log( smallImagePath )
+
+      imageElement.src = smallImagePath
+
+    })
+
+    imgInContent.forEach( imageElement => {
+      const imageLoader = new Image()
+
+      if(imageElement.dataset.src) {
+        imageLoader.src = imageElement.dataset.src
+        imageLoader.addEventListener("load", () => {imageElement.src = imageLoader.src}, {once: true})
+      }
+    })
+
   }
 
   setImageLayout() {
