@@ -26,6 +26,5 @@
     "vuepress-plugin-container": "^2.1.2",
     "vuepress-plugin-typescript": "^0.2.0",
     "vuepress-types": "^0.9.0"
-  },
-  "type": "module"
+  }
 }
