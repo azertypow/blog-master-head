@@ -14,7 +14,7 @@
 
       <section>
 
-        <ListOfStudents v-if="listOfStudents"></ListOfStudents>
+        <ListOfStudents></ListOfStudents>
 
         <Content
                 ref="articlesContent"
@@ -74,10 +74,6 @@ export default class Layout extends Vue {
 
   scrollEvent = () => {
     if (this.storeData.imageGallery !== null) store.clearImageGallery()
-  }
-
-  get listOfStudents(): string | null {
-    return (this.$page.frontmatter as IPageFrontmatter).students || null
   }
 
   setArticleTitleFromElement(Element: Element) {
