@@ -2,7 +2,7 @@
     <footer class="v-footer">
         <div class="v-footer_credit">
             <h6 @click="this.openContactWindow" >
-                <span class="l-ui--link">2020© Master Media DesignHEAD — Genève</span> -->
+                <span class="l-ui-link">2020© Master Media DesignHEAD — Genève</span> -->
             </h6>
 <!--            <h6><span >Nicolas Baldran et David Héritier</span></h6>-->
         </div>

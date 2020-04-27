@@ -3,8 +3,8 @@
   text-decoration: none;
 }
 
-.l-ui--link {
-  @extend .l-ui--link-no-style;
+.l-ui-link {
+  @extend .l-ui-link-no-style;
   text-decoration: underline;
   cursor: pointer;
 }

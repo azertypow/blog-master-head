@@ -8,7 +8,7 @@
                 <a v-if="externalLink.length"
                    :href="externalLink"
                    target="_blank"
-                   class="l-ui--link"
+                   class="l-ui-link"
                 >{{speaker}}</a>
 
                 <div v-else>{{speaker}}</div>
@@ -23,7 +23,7 @@
                 <a v-if="externalLink.length"
                    :href="externalLink"
                    target="_blank"
-                   class="l-ui--link"
+                   class="l-ui-link"
                 >{{student}}</a>
 
                 <div v-else>{{student}}</div>
@@ -38,7 +38,7 @@
                 <a v-if="externalLink.length"
                    :href="externalLink"
                    target="_blank"
-                   class="l-ui--link"
+                   class="l-ui-link"
                 >{{assistant}}</a>
 
                 <div v-else>{{assistant}}</div>
