@@ -1,6 +1,11 @@
 <template>
     <footer class="v-footer">
-        <p>© HEAD — Genève | master media design, <span class="l-ui--link" @click="this.openContactWindow">Nicolas Baldran et David Héritier</span></p>
+        <div class="v-footer_credit">
+            <h6 @click="this.openContactWindow" >
+                <span class="l-ui--link">2020© Master Media DesignHEAD — Genève</span> -->
+            </h6>
+<!--            <h6><span >Nicolas Baldran et David Héritier</span></h6>-->
+        </div>
     </footer>
 </template>
 
@@ -43,5 +48,9 @@
         > * {
             margin: 0;
         }
+    }
+
+    .v-footer_credit {
+        margin-left: auto;
     }
 </style>
