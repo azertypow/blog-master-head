@@ -39,18 +39,19 @@
     @import "../styles/params";
 
     .v-footer {
+        overflow: hidden;
         box-sizing: border-box;
         border-top: solid 1px;
         height: $footer-height;
         display: flex;
         align-items: center;
-
-        > * {
-            margin: 0;
-        }
     }
 
     .v-footer_credit {
         margin-left: auto;
+
+        > * {
+            margin: 0;
+        }
     }
 </style>
