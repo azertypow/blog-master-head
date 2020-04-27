@@ -1,31 +1,39 @@
 <template>
-    <nav class="v-page-nav">
-        <div class="v-page-nav__container">
+    <nav class="v-page-nav"
+         @mouseleave="isOpen = false"
+         @mouseenter="isOpen = true">
 
-            <div class="v-page-nav__left"><a class="l-ui--link-no-style" href="/">{{this.$site.title}}</a></div>
+        <div class="v-page-nav__top">
 
-            <div class="v-page-nav__center">
-
-                <div class="l-site-nav" :class="{'l-site-nav--open': $page.path === '/'}">
-
-                    <div class="l-site-nav__title">{{this.siteNavTitle}}</div>
-                    <ul class="l-site-nav__list">
-                        <template v-for="page of $site.pages">
-                            <li v-if="page.path !== '/' && page.title !== $page.title">
-                                <a :href="page.path">{{page.title}}</a>
-                            </li>
-                        </template>
-                    </ul>
-
-                </div>
-
+            <div class="v-page-nav__top__left">
+                <a class="l-ui-link-no-style" href="/">{{this.$site.title}}</a>
             </div>
 
-            <div class="v-page-nav__right">
-                <a href="https://mastermediadesign.ch" target="_blank" class="l-ui--link-no-style">mastermediadesign.ch</a>
+            <div class="v-page-nav__top__center">
+                <div class="v-page-nav__top__title">{{this.siteNavTitle}}</div>
+            </div>
+
+            <div class="v-page-nav__top__right">
+                <a href="https://mastermediadesign.ch" target="_blank" class="l-ui-link-no-style">mastermediadesign.ch</a>
             </div>
 
         </div>
+
+        <div class="v-page-nav__bottom" v-if="isOpen">
+
+            <div class="v-page-nav__bottom__center">
+                <ul class="v-page-nav__bottom__pages l-ui-list">
+                    <template v-for="page of $site.pages">
+                        <li v-if="page.path !== '/' && page.title !== $page.title">
+                            <a :href="page.path"
+                               class="l-ui-link-no-style">{{page.title}}</a>
+                        </li>
+                    </template>
+                </ul>
+            </div>
+
+        </div>
+
     </nav>
 </template>
 
@@ -42,9 +50,25 @@
       },
     })
     export default class PageNav extends Vue {
-      get siteNavTitle() {
-        return this.$page.path === '/' ? "projects /" : this.$page.relativePath.replace(/\/index.md$/, " /")
+      private property = {
+        isOpen: false
       }
+
+      get isHome() {
+        return this.$page.path === '/'
+      }
+
+      get siteNavTitle() {
+        return this.isHome ? "projects /" : this.$page.relativePath.replace(/\/index.md$/, "")
+      }
+
+      get isOpen() {
+        return this.isHome ? false : this.property.isOpen
+      }
+      set isOpen(value: boolean) {
+        this.property.isOpen = this.isHome ? false : value
+      }
+
     }
 </script>
 
@@ -53,40 +77,66 @@
     @import "../styles/grid";
 
     .v-page-nav {
-        padding-left: $grid-gutter-width;
-        padding-right: $grid-gutter-width;
+        user-select: none;
         box-sizing: border-box;
         position: fixed;
-        background-color: $site-theme-color;
         top: 0;
         left: 0;
         width: 100%;
         z-index: 100000;
         height: $nav-height;
-        border-bottom: solid 1px;
+        border-bottom: solid 1px $site-color;
     }
 
-    .v-page-nav__container {
+    // top
+    .v-page-nav__top {
         @include column-container;
+        /*border-bottom: solid 1px;*/
+        padding: 0 $grid-gutter-width / 2;
+        background-color: $site-theme-color;
         width: 100%;
         height: 100%;
+        overflow: hidden;
 
         max-width: 1280px;
         box-sizing: border-box;
         margin: auto;
     }
 
-    .v-page-nav__left {
+    .v-page-nav__top__left {
         @include grid-coll-number(2, 12);
+        padding: 0 $grid-gutter-width / 2;
     }
 
-    .v-page-nav__center {
-
+    .v-page-nav__top__center {
+        padding: 0 $grid-gutter-width / 2;
     }
 
-    .v-page-nav__right {
-        @include grid-coll-number(2, 12);
+    .v-page-nav__top__title {
+        text-transform: lowercase;
+    }
+
+    .v-page-nav__top__right {
         margin-left: auto;
-        text-align: right;
+        padding: 0 $grid-gutter-width / 2;
     }
+
+    // bottom
+    .v-page-nav__bottom {
+        @include column-container;
+        padding: 0 $grid-gutter-width / 2 $grid-gutter-width $grid-gutter-width / 2;
+        background-color: $site-theme-color;
+        overflow: hidden;
+        border-bottom: solid 1px;
+    }
+
+    .v-page-nav__bottom__center {
+        @include grid-gap-left-coll(2, 12);
+        padding: 0 $grid-gutter-width / 2;
+    }
+
+    .v-page-nav__bottom__pages {
+        text-transform: lowercase;
+    }
+
 </style>
