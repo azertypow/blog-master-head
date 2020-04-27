@@ -154,6 +154,8 @@ export default class Layout extends Vue {
 
       if(imageInPElementNodeList.length > 1) {
 
+        const hasMore2Images = imageInPElementNodeList.length > 2
+
         const imagesContainer = document.createElement("div")
         imagesContainer.className = "ts-img-container"
 
@@ -167,7 +169,7 @@ export default class Layout extends Vue {
         imageContainerRight.className = "ts-img-container__right"
 
         imagesContainer.appendChild( imageContainerLeft )
-        imagesContainer.appendChild( imageContainerCenter )
+        if(hasMore2Images) imagesContainer.appendChild( imageContainerCenter )
         imagesContainer.appendChild( imageContainerRight )
 
         imageInPElementNodeList.forEach( ( imageInPElement, index ) => {
@@ -189,9 +191,18 @@ export default class Layout extends Vue {
             })
           })
 
-          if      ( index % 3 === 0 ) imageContainerLeft.appendChild( imageBox )
-          else if ( index % 3 === 1 ) imageContainerCenter.appendChild( imageBox )
-          else imageContainerRight.appendChild( imageBox )
+          if (hasMore2Images) {
+
+            if (index % 3 === 0) imageContainerLeft.appendChild(imageBox)
+            else if (index % 3 === 1) imageContainerCenter.appendChild(imageBox)
+            else imageContainerRight.appendChild(imageBox)
+
+          } else {
+
+            if (index % 2 === 0) imageContainerLeft.appendChild(imageBox)
+            else imageContainerRight.appendChild(imageBox)
+
+          }
 
         })
 
