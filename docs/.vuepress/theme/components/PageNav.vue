@@ -62,12 +62,14 @@
         left: 0;
         width: 100%;
         z-index: 100000;
+        height: $nav-height;
+        border-bottom: solid 1px;
     }
 
     .v-page-nav__container {
         @include column-container;
         width: 100%;
-        height: $nav-height;
+        height: 100%;
 
         max-width: 1280px;
         box-sizing: border-box;

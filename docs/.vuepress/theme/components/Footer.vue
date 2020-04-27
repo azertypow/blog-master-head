@@ -31,7 +31,17 @@
 </script>
 
 <style lang="scss" scoped>
-    .v-footer {
+    @import "../styles/params";
 
+    .v-footer {
+        box-sizing: border-box;
+        border-top: solid 1px;
+        height: $footer-height;
+        display: flex;
+        align-items: center;
+
+        > * {
+            margin: 0;
+        }
     }
 </style>

@@ -2,6 +2,7 @@
   max-width: 1280px;
   box-sizing: border-box;
   margin: auto;
+  min-height: calc( 100vh - #{$nav-height + $footer-height} );
 
   > section {
     position: relative;

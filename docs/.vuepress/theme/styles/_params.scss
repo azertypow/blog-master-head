@@ -9,6 +9,7 @@ $grid-gutter-width: $line-height;
 // font
 $font-family-default: 'Inter', sans-serif;
 
-$nav-height: 6rem;
-
+// elements
+$nav-height: $line-height * 2;
+$footer-height: $line-height * 2;
 $header-article-height: 350px;
