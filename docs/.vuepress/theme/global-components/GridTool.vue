@@ -2,7 +2,8 @@
     <section class="v-grid-tool">
         <div v-for="lineNumber in numberOfLines"
              :style="{
-                top: padding_px * lineNumber + 'px'
+                top: (top * 1) + (padding_px * lineNumber) +'px',
+                background: color,
              }"
              class="v-grid-tool__line"></div>
     </section>
@@ -24,6 +25,13 @@
 
       @Prop({default: 10})
       padding_px!: number
+
+
+      @Prop({default: "red"})
+      color!: string
+
+      @Prop({default: 0})
+      top!: number
 
       numberOfLines = 0
 
@@ -49,7 +57,6 @@
         position: absolute;
         width: 100%;
         height: 1px;
-        background: red;
         opacity: .25;
     }
 </style>

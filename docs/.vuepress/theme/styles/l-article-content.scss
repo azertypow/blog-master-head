@@ -7,6 +7,14 @@
 
   > * {
     @include grid-coll-number(8, 10);
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .l-page__intro, .l-page__credit, .l-page__date {
@@ -26,10 +34,6 @@
 
   .l-page__date {
     text-align: right;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 25px;
-    margin-top: 1rem;
 
     > * {
       margin: 0;
@@ -40,8 +44,8 @@
     display: block;
     height: auto;
     width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: $line-height;
+    margin-bottom: $line-height;
   }
 
   a {

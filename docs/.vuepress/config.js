@@ -1,10 +1,14 @@
 module.exports = {
-  title: "distorsions.",
+  title: "distortions.",
   description: "site description",
   locales: {
     "/": {
-      lang: "fr-FR",
+      lang: "en",
     },
+  },
+
+  themeConfig: {
+    articlesNames: "series"
   },
 
   markdown: {

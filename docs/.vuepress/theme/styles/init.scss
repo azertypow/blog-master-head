@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html,
 body {
@@ -9,19 +8,47 @@ body {
   color: $site-color;
 }
 
-html {
-  font-size: 10px;
-  line-height: 20px;
-}
-
 body {
   font-family: $font-family-default;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 2rem;
   padding-left: $grid-gutter-width;
   padding-right: $grid-gutter-width;
   box-sizing: border-box;
+
+  font-size: $font-regular--size;
+  line-height: $font-regular--line-height;
+  font-weight: $font-regular--weight;
+}
+
+h6 {
+  @include font-small;
+}
+
+h5 {
+  @include font-semi-small;
+}
+
+p {
+  @include font-regular;
+}
+
+h4 {
+  @include font-medium;
+}
+
+h3 {
+  @include font-semi-bold;
+}
+
+.test-bold {
+  @include font-bold;
+}
+
+h2 {
+  @include font-extra-bold;
+}
+
+h1 {
+  @include font-expend;
 }

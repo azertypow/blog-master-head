@@ -80,15 +80,15 @@
     @import "../styles/params";
 
     .v-vimeo {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: $line-height;
+        margin-bottom: $line-height;
         position: relative;
     }
 
     .vi__description {
         position: relative;
         overflow: hidden;
-        bottom: 1rem;
+        bottom: $line-height;
         left: 0;
         display: flex;
 

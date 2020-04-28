@@ -112,14 +112,12 @@
 
 <style lang="scss" scoped>
     @import "../styles/params";
+    @import "../styles/font-settings";
 
     .v-list-of-students {
         position: absolute;
         left: 0;
         top: 0;
-        font-size: 15px;
-        line-height: 20px;
-        font-weight: 800;
 
         &.fixed {
             position: fixed;
@@ -127,6 +125,18 @@
             top: 60px;
             box-sizing: border-box;
             left: unset;
+        }
+
+        > * {
+            @include font-small;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 </style>

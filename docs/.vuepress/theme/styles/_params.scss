@@ -2,14 +2,50 @@
 $site-theme-color: white;
 $site-color: invert($site-theme-color);
 
+
 // grid
-$line-height: 24px;
+$line-height: 28px;
 $grid-gutter-width: $line-height;
+
 
 // font
 $font-family-default: 'Inter', sans-serif;
 
+$font-weight-default: 500;
+$font-weight-medium: 700;
+
+//// small
+$font-small--size: 15px;
+$font-small--line-height: $line-height / 4 * 3;
+$font-small--weight: $font-weight-default;
+
+//// regular
+$font-regular--size: 20px;
+$font-regular--line-height: $line-height;
+$font-regular--weight: $font-weight-default;
+
+//// semi bold
+$font-semi-bold--size: 50px;
+$font-semi-bold--line-height: $line-height * 2;
+$font-semi-bold--weight: $font-weight-default;
+
+//// bold
+$font-bold--size: 78px;
+$font-bold--line-height: $line-height * 3;
+$font-bold--weight: $font-weight-default;
+
+//// extra-bold
+$font-extra-bold--size: 105px;
+$font-extra-bold--line-height: $line-height * 4;
+$font-extra-bold--weight: $font-weight-medium;
+
+//// expend
+$font-expend--size: 132px;
+$font-expend--line-height: $line-height * 5;
+$font-expend--weight: $font-weight-medium;
+
+
 // elements
-$nav-height: $line-height * 2;
-$footer-height: $line-height * 2;
+$nav-height: $line-height / 2 * 3;
+$footer-height: $line-height / 2 * 3;
 $header-article-height: 350px;

@@ -59,7 +59,7 @@
       }
 
       get siteNavTitle() {
-        return this.isHome ? "projects /" : this.$page.relativePath.replace(/\/index.md$/, "")
+        return this.isHome ? this.$themeConfig.articlesNames : this.$page.relativePath.replace(/\/index.md$/, "")
       }
 
       get isOpen() {
@@ -74,6 +74,7 @@
 
 <style lang="scss" scoped>
     @import "../styles/params";
+    @import "../styles/font-settings";
     @import "../styles/grid";
 
     .v-page-nav {
@@ -105,20 +106,26 @@
 
     .v-page-nav__top__left {
         @include grid-coll-number(2, 12);
+        @include font-small;
         padding: 0 $grid-gutter-width / 2;
+        margin: 0;
     }
 
     .v-page-nav__top__center {
+        @include font-small;
+        @include grid-coll-number(4, 12);
         padding: 0 $grid-gutter-width / 2;
+        margin: 0;
+    }
+
+    .v-page-nav__top__right {
+        @include font-small;
+        padding: 0 $grid-gutter-width / 2;
+        margin: 0;
     }
 
     .v-page-nav__top__title {
         text-transform: lowercase;
-    }
-
-    .v-page-nav__top__right {
-        margin-left: auto;
-        padding: 0 $grid-gutter-width / 2;
     }
 
     // bottom

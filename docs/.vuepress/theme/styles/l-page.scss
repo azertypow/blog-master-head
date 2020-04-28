@@ -3,21 +3,13 @@
 }
 
 .l-page__intro {
-  font-weight: 400;
-  font-size: 45px;
-  line-height: 50px;
 
   > *:first-child {
     margin-top: 0;
   }
 
-  + h2 {
-    margin-top: 50px;
-  }
-
   p {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    @include font-semi-bold;
   }
 }
 
