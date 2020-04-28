@@ -7,6 +7,28 @@
 
     <main class="l-app-content">
 
+      <div class="l-app-content__info">
+
+
+        <div class="l-app-content__info__left">
+
+        </div>
+
+        <div class="l-app-content__info__center">
+          <h6>last update: {{ $page.frontmatter.date }}</h6>
+        </div>
+
+        <div class="l-app-content__info__right">
+          <h6>
+            speakers:
+            <span v-for="speaker of this.$page.frontmatter.speakers">
+              {{ Object.keys( speaker )[0] }}
+            </span>
+          </h6>
+        </div>
+
+      </div>
+
       <h1
               v-if="$page.path !== '/'"
               class="l-app-content__title"

@@ -45,6 +45,8 @@
             width: calc(100% + #{$grid-gutter-width * 2} );
             margin-left: -$grid-gutter-width;
             height: $header-article-height;
+            min-height: 350px;
+            max-height: 900px;
         }
 
         > img {

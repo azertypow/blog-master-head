@@ -52,4 +52,4 @@ $font-expend--weight: $font-weight-medium;
 $nav-height: $line-height / 4 * 5;
 $footer-height: $nav-height;
 //$header-article-height: 350px;
-$header-article-height: calc( 100vh - #{$line-height * 6} );
+$header-article-height: calc( 100vh - #{$line-height * 8} );
