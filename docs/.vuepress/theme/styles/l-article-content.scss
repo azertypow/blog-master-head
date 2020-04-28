@@ -15,6 +15,12 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    &:not(div),
+    .l-page__intro {
+      padding-left: $grid-gutter-width / 2;
+      padding-right: $grid-gutter-width / 2;
+    }
   }
 
   .l-page__intro, .l-page__credit, .l-page__date {
@@ -67,8 +73,8 @@
 .ts-img-container__right {
   width: 100%;
   box-sizing: border-box;
-  padding-left: $grid-gutter-width / 4;
-  padding-right: $grid-gutter-width / 4;
+  padding-left: $grid-gutter-width / 2;
+  padding-right: $grid-gutter-width / 2;
 
   img {
     margin: 0;

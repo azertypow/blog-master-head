@@ -12,9 +12,6 @@ body {
   font-family: $font-family-default;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding-left: $grid-gutter-width;
-  padding-right: $grid-gutter-width;
-  box-sizing: border-box;
 
   font-size: $font-regular--size;
   line-height: $font-regular--line-height;
@@ -22,33 +19,29 @@ body {
 }
 
 h6 {
-  @include font-small;
+  @include font--2;
 }
 
 h5 {
-  @include font-semi-small;
+  @include font--1;
 }
 
 p {
-  @include font-regular;
+  @include font-0;
 }
 
 h4 {
-  @include font-medium;
+  @include font-1;
 }
 
 h3 {
-  @include font-semi-bold;
-}
-
-.test-bold {
-  @include font-bold;
+  @include font-2;
 }
 
 h2 {
-  @include font-extra-bold;
+  @include font-3;
 }
 
 h1 {
-  @include font-expend;
+  @include font-6;
 }

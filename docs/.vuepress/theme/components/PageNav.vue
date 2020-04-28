@@ -105,20 +105,20 @@
 
     .v-page-nav__top__left {
         @include grid-coll-number(2, 12);
-        @include font-small;
+        @include font--2;
         padding: 0 $grid-gutter-width / 2;
         margin: 0;
     }
 
     .v-page-nav__top__center {
-        @include font-small;
+        @include font--2;
         @include grid-coll-number(4, 12);
         padding: 0 $grid-gutter-width / 2;
         margin: 0;
     }
 
     .v-page-nav__top__right {
-        @include font-small;
+        @include font--2;
         padding: 0 $grid-gutter-width / 2;
         margin: 0;
     }

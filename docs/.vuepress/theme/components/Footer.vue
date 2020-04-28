@@ -1,8 +1,14 @@
 <template>
     <footer class="v-footer">
-        <div class="v-footer_credit">
+
+
+        <div class="v-footer__left"></div>
+
+        <div class="v-footer__center"></div>
+
+        <div class="v-footer__right">
             <h6 @click="this.openContactWindow" >
-                <span class="l-ui-link">2020© Master Media DesignHEAD — Genève</span> -->
+                <span class="l-ui-link-no-style">© 2020 Master Media Design, HEAD — Genève</span> -->
             </h6>
 <!--            <h6><span >Nicolas Baldran et David Héritier</span></h6>-->
         </div>
@@ -37,18 +43,43 @@
 
 <style lang="scss" scoped>
     @import "../styles/params";
+    @import "../styles/grid";
+    @import "../styles/font-settings";
 
     .v-footer {
+        @include column-container;
         overflow: hidden;
         box-sizing: border-box;
         border-top: solid 1px;
         height: $footer-height;
-        display: flex;
-        align-items: center;
     }
 
-    .v-footer_credit {
-        margin-left: auto;
+    .v-footer__left {
+        @include grid-coll-number(2, 12);
+        @include font--2;
+        padding: 0 $grid-gutter-width / 2;
+        margin: 0;
+
+        > * {
+            margin: 0;
+        }
+    }
+
+    .v-footer__center {
+        @include font--2;
+        @include grid-coll-number(4, 12);
+        padding: 0 $grid-gutter-width / 2;
+        margin: 0;
+
+        > * {
+            margin: 0;
+        }
+    }
+
+    .v-footer__right {
+        @include font--2;
+        padding: 0 $grid-gutter-width / 2;
+        margin: 0;
 
         > * {
             margin: 0;

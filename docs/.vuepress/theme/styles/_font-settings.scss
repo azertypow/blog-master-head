@@ -1,4 +1,4 @@
-@mixin font-small {
+@mixin font--2 {
   $this-line-height: $font-small--line-height;
 
   position: relative;
@@ -12,13 +12,13 @@
    //top: 6px;
 }
 
-@mixin font-semi-small {
-  @include font-small;
+@mixin font--1 {
+  @include font--2;
 
   font-weight: $font-weight-medium;
 }
 
-@mixin font-regular {
+@mixin font-0 {
   $this-line-height: $font-regular--line-height;
 
   position: relative;
@@ -30,14 +30,16 @@
   margin-bottom: $this-line-height;
 }
 
-@mixin font-medium {
-  @include font-regular;
+@mixin font-1 {
+  @include font-0;
 
   font-weight: $font-weight-medium;
 }
 
-@mixin font-semi-bold {
+@mixin font-2 {
   $this-line-height: $font-semi-bold--line-height;
+
+  font-family: $font-family-display;
 
   position: relative;
   font-size: $font-semi-bold--size;
@@ -50,8 +52,22 @@
    //top: -24px;
 }
 
-@mixin font-bold {
+@mixin font-3 {
+  @include font-2;
+
+  font-size: $font-semi-bold-large--size;
+
+  font-weight: $font-weight-medium;
+
+  margin-top: $line-height * 3;
+
+  letter-spacing: -0.015em;
+}
+
+@mixin font-4 {
   $this-line-height: $font-bold--line-height;
+
+  font-family: $font-family-display;
 
   position: relative;
   font-size: $font-bold--size;
@@ -61,11 +77,13 @@
   margin-top: $this-line-height;
   margin-bottom: $line-height;
 
-   //top: -20px;
+  //top: -20px;
 }
 
-@mixin font-extra-bold {
+@mixin font-5 {
   $this-line-height: $font-extra-bold--line-height;
+
+  font-family: $font-family-display;
 
   position: relative;
   font-size: $font-extra-bold--size;
@@ -78,8 +96,10 @@
    //top: -12px;
 }
 
-@mixin font-expend {
+@mixin font-6 {
   $this-line-height: $font-expend--line-height;
+
+  font-family: $font-family-display;
 
   position: relative;
   font-size: $font-expend--size;
@@ -88,6 +108,8 @@
 
   margin-top: $this-line-height;
   margin-bottom: $line-height * 2;
+
+  letter-spacing: -0.025em;
 
    //top: -12px;
 }

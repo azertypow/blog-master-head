@@ -118,17 +118,20 @@
         position: absolute;
         left: 0;
         top: 0;
+        box-sizing: border-box;
+        padding-left: $grid-gutter-width / 2;
+        padding-right: $grid-gutter-width / 2;
+        width: calc(100% / 12 * 2);
 
         &.fixed {
             position: fixed;
-            width: calc(100% / 12 * 2);
-            top: 60px;
+            top: $nav-height + $font-small--line-height;
             box-sizing: border-box;
             left: unset;
         }
 
         > * {
-            @include font-small;
+            @include font--2;
 
             &:first-child {
                 margin-top: 0;

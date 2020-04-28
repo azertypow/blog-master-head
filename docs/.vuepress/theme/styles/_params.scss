@@ -10,6 +10,7 @@ $grid-gutter-width: $line-height;
 
 // font
 $font-family-default: 'Inter', sans-serif;
+$font-family-display: 'InterDisplay', sans-serif;
 
 $font-weight-default: 500;
 $font-weight-medium: 700;
@@ -25,14 +26,16 @@ $font-regular--line-height: $line-height;
 $font-regular--weight: $font-weight-default;
 
 //// semi bold
-$font-semi-bold--size: 50px;
+$font-semi-bold--size: 48px;
 $font-semi-bold--line-height: $line-height * 2;
 $font-semi-bold--weight: $font-weight-default;
+
+$font-semi-bold-large--size: 50px;
 
 //// bold
 $font-bold--size: 78px;
 $font-bold--line-height: $line-height * 3;
-$font-bold--weight: $font-weight-default;
+$font-bold--weight: $font-weight-medium;
 
 //// extra-bold
 $font-extra-bold--size: 105px;
@@ -46,6 +49,7 @@ $font-expend--weight: $font-weight-medium;
 
 
 // elements
-$nav-height: $line-height / 2 * 3;
-$footer-height: $line-height / 2 * 3;
-$header-article-height: 350px;
+$nav-height: $line-height / 4 * 5;
+$footer-height: $nav-height;
+//$header-article-height: 350px;
+$header-article-height: calc( 100vh - #{$line-height * 6} );
