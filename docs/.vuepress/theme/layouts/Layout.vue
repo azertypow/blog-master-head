@@ -207,8 +207,6 @@ export default class Layout extends Vue {
 
           imageBox.addEventListener("click", () => {
 
-            console.log(store)
-
             store.setImageGallery({
               alt: imageAlt,
               src: (imageInPElement as HTMLImageElement).src
@@ -230,9 +228,11 @@ export default class Layout extends Vue {
 
         })
 
-        articleContainer.$el.insertBefore(imagesContainer, pElement.nextElementSibling)
+        // articleContainer.$el.insertBefore(imagesContainer, pElement.nextSibling)
+        // if(pElement.childElementCount === 0) pElement.style.display = "none"
 
-        if(pElement.childElementCount === 0) pElement.style.display = "none"
+        pElement.appendChild( imagesContainer )
+        pElement.classList.add( "ts-has-image-container" )
       }
 
     })
