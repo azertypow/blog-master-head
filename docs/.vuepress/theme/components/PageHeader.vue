@@ -42,8 +42,7 @@
         padding-top: $nav-height;
 
         &.has-cover {
-            width: calc(100% + #{$grid-gutter-width * 2} );
-            margin-left: -$grid-gutter-width;
+            width: 100%;
             height: $header-article-height;
             min-height: 350px;
             max-height: 900px;
