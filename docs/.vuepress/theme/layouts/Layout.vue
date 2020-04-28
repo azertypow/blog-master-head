@@ -7,7 +7,8 @@
 
     <main class="l-app-content">
 
-      <div class="l-app-content__info">
+      <div class="l-app-content__info"
+           v-if="$page.path !== '/'">
 
 
         <div class="l-app-content__info__left">
@@ -49,6 +50,10 @@
       <GalleryImage class="to-animate" v-if="storeData.imageGallery" :prop="storeData.imageGallery"></GalleryImage>
     </transition>
 
+    <ContinueToRead
+            v-if="$page.path !== '/'"
+    />
+
     <Footer></Footer>
 
   </div>
@@ -63,9 +68,10 @@ import PageHeader from "../components/PageHeader.vue"
 import PageNav from "../components/PageNav.vue"
 import Footer from "../components/Footer.vue"
 import GalleryImage from "../components/GalleryImage.vue"
+import ContinueToRead from "../components/ContinueToRead.vue"
 
 @Component({
-  components: {Footer, PageNav, PageHeader, ListOfStudents, GalleryImage},
+  components: {ContinueToRead, Footer, PageNav, PageHeader, ListOfStudents, GalleryImage},
   mounted(this: Layout) {
     this.$nextTick(() => {
       this.setImgLazyLoad()
