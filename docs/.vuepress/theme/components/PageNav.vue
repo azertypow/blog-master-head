@@ -23,14 +23,7 @@
         <div class="v-page-nav__bottom" v-if="isOpen">
 
             <div class="v-page-nav__bottom__center">
-                <ul class="v-page-nav__bottom__pages l-ui-list l-ui-list--small">
-                    <template v-for="page of $site.pages">
-                        <li v-if="page.path !== '/' && page.title !== $page.title">
-                            <a :href="page.path"
-                               class="l-ui-link-no-style">{{page.title}}</a>
-                        </li>
-                    </template>
-                </ul>
+                <PagesList/>
             </div>
 
         </div>
@@ -42,8 +35,10 @@
     import { Vue, Component, Prop } from "vue-property-decorator";
     import Layout from "../layouts/Layout.vue"
     import {PageComputed} from "vuepress-types"
+    import PagesList from "../global-components/PagesList.vue"
 
     @Component({
+      components: {PagesList},
       created(this: Layout) {
         this.$nextTick(() => {
           console.log("PageNav: next created")
@@ -148,10 +143,9 @@
     .v-page-nav__bottom__center {
         @include grid-gap-left-coll(2, 12);
         padding: 0 $grid-gutter-width / 2;
-    }
 
-    .v-page-nav__bottom__pages {
-        text-transform: lowercase;
+        .v-pages-list {
+            margin: 0;
+        }
     }
-
 </style>
