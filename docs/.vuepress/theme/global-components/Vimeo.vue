@@ -78,6 +78,7 @@
 
 <style lang="scss" scoped>
     @import "../styles/params";
+    @import "../styles/grid";
 
     .v-vimeo {
         margin-top: $line-height;
@@ -86,14 +87,35 @@
     }
 
     .vi__description {
+        @include column-container;
         position: relative;
         overflow: hidden;
-        bottom: $line-height;
         left: 0;
-        display: flex;
+        border: solid 1px;
+        align-items: baseline;
+        padding-bottom: $line-height / 2;
 
-        p + p {
-            padding-left: $grid-gutter-width * 2;
+        > * {
+            margin: 0;
+            font-size: $font-small--size;
+            line-height: $font-small--line-height;
+            white-space: nowrap;
+
+            /*> br {*/
+            /*    display: none !important;*/
+            /*}*/
+
+            /*
+            + * {
+                padding-left: $grid-gutter-width * 2;
+            }
+            */
+
+            padding-left: $grid-gutter-width / 2;
+            padding-right: $grid-gutter-width / 2;
+
+            @include grid-coll-number(1 , 2);
+
         }
     }
 

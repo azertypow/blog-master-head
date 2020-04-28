@@ -21,6 +21,10 @@ body {
 h6 {
   @include font--2;
 }
+h2 + h6 {
+  margin-top: - $line-height;
+}
+
 
 h5 {
   @include font--1;

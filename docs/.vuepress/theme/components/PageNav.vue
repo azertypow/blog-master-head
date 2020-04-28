@@ -1,5 +1,6 @@
 <template>
     <nav class="v-page-nav"
+         :class="{'is-open': isOpen}"
          @mouseleave="isOpen = false"
          @mouseenter="isOpen = true">
 
@@ -85,8 +86,13 @@
         left: 0;
         width: 100%;
         z-index: 100000;
-        height: $nav-height;
+        height: $nav-height + 1px;
         border-bottom: solid 1px $site-color;
+        background: $site-theme-color;
+
+        &.is-open {
+            height: auto;
+        }
     }
 
     // top
@@ -95,7 +101,7 @@
         /*border-bottom: solid 1px;*/
         background-color: $site-theme-color;
         width: 100%;
-        height: 100%;
+        height: $nav-height;
         overflow: hidden;
 
         max-width: 1280px;
@@ -133,7 +139,10 @@
         padding-bottom: $grid-gutter-width / 2;
         background-color: $site-theme-color;
         overflow: hidden;
-        border-bottom: solid 1px;
+
+        max-width: 1280px;
+        box-sizing: border-box;
+        margin: auto;
     }
 
     .v-page-nav__bottom__center {

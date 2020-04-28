@@ -52,6 +52,7 @@
         box-sizing: border-box;
         border-top: solid 1px;
         height: $footer-height;
+        margin-top: 1 * $line-height;
     }
 
     .v-footer__left {
