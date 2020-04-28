@@ -91,9 +91,9 @@
         position: relative;
         overflow: hidden;
         left: 0;
-        border: solid 1px;
         align-items: baseline;
-        padding-bottom: $line-height / 2;
+        //border: solid 1px;
+        //padding-bottom: $line-height / 2;
 
         > * {
             margin: 0;
@@ -125,6 +125,8 @@
 
     .vi__vimeo-container {
         position: relative;
+        padding-left: $grid-gutter-width / 2;
+        padding-right: $grid-gutter-width / 2;
     }
 </style>
 

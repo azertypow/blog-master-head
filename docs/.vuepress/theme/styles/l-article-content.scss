@@ -16,7 +16,7 @@
       margin-bottom: 0;
     }
 
-    &:not(div) {
+    &:not(div):not(.v-vimeo) {
       padding-left: $grid-gutter-width / 2;
       padding-right: $grid-gutter-width / 2;
       box-sizing: border-box;
