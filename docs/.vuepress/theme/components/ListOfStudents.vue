@@ -2,7 +2,7 @@
     <aside class="v-list-of-students">
 
         <div v-if="listOfSpeakers">
-            <div>Speakers</div>
+            <div class="v-list-of-students__section-title">speakers</div>
             <div v-for="(externalLink, speaker) in listOfSpeakers " >
 
                 <a v-if="externalLink.length"
@@ -17,7 +17,7 @@
         </div>
 
         <div v-if="listOfStudents">
-            <div>Students</div>
+            <div class="v-list-of-students__section-title">students</div>
             <div v-for="(externalLink, student) in listOfStudents " >
 
                 <a v-if="externalLink.length"
@@ -32,7 +32,7 @@
         </div>
 
         <div v-if="listOfAssistants">
-            <div>Assistants</div>
+            <div class="v-list-of-students__section-title">assistants</div>
             <div v-for="(externalLink, assistant) in listOfAssistants " >
 
                 <a v-if="externalLink.length"
@@ -139,4 +139,9 @@
             }
         }
     }
+
+    .v-list-of-students__section-title {
+        //padding-left: $font-small--line-height;
+    }
+
 </style>
