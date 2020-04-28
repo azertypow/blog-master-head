@@ -22,7 +22,7 @@
         <div class="v-page-nav__bottom" v-if="isOpen">
 
             <div class="v-page-nav__bottom__center">
-                <ul class="v-page-nav__bottom__pages l-ui-list">
+                <ul class="v-page-nav__bottom__pages l-ui-list l-ui-list--small">
                     <template v-for="page of $site.pages">
                         <li v-if="page.path !== '/' && page.title !== $page.title">
                             <a :href="page.path"
@@ -93,7 +93,6 @@
     .v-page-nav__top {
         @include column-container;
         /*border-bottom: solid 1px;*/
-        padding: 0 $grid-gutter-width / 2;
         background-color: $site-theme-color;
         width: 100%;
         height: 100%;
@@ -131,7 +130,7 @@
     // bottom
     .v-page-nav__bottom {
         @include column-container;
-        padding: 0 $grid-gutter-width / 2 $grid-gutter-width $grid-gutter-width / 2;
+        padding-bottom: $grid-gutter-width / 2;
         background-color: $site-theme-color;
         overflow: hidden;
         border-bottom: solid 1px;

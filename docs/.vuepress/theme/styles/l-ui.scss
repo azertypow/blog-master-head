@@ -9,8 +9,13 @@
   cursor: pointer;
 }
 
+.l-ui-list--small {
+  @include font-small;
+}
+
 .l-ui-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
