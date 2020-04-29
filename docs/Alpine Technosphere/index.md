@@ -52,8 +52,8 @@ Exploration and data collection in the Chamonix valley, as part of research on t
 Guided by the senses, we followed the sounds of the valley, from the urban sounds to the sounds of nature, while identifying the images associated with them. During this 3-day interview of the valley, we were able to reveal, thanks to the different samples taken, a soundscape that we showed through a 3-dimensional visualization.
 
 
-![](https://i.imgur.com/HTEnRFG.jpg)
-![](https://i.imgur.com/JLa54TP.jpg)
+![Interview with the Alps | @HEAD—Genève, Gabriel Abergel, Johan Pardo](https://i.imgur.com/HTEnRFG.jpg)
+![Interview with the Alps | @HEAD—Genève, Gabriel Abergel, Johan Pardo](https://i.imgur.com/JLa54TP.jpg)
 
 
 ::: vimeo https://vimeo.com/392233275
@@ -133,15 +133,15 @@ Amsatou Diop, Aurelie Belle
 ## Materia Prima
 ###### by Laís Kunzendorff
 
-![](https://i.imgur.com/0G0lWjs.jpg)
+![Materia Prima | @HEAD—Genève, Laís Kunzendorff](https://i.imgur.com/0G0lWjs.jpg)
 
-![](https://i.imgur.com/PY9YP4u.jpg)
+![Materia Prima | @HEAD—Genève, Laís Kunzendorff](https://i.imgur.com/PY9YP4u.jpg)
 
-![](https://i.imgur.com/d1b0MjC.jpg)
+![Materia Prima | @HEAD—Genève, Laís Kunzendorff](https://i.imgur.com/d1b0MjC.jpg)
 
 
 --> small project description
 
-![](https://i.imgur.com/SxywkGV.jpg)
-![](https://i.imgur.com/AOBBW9S.jpg)
-![](https://i.imgur.com/Hj4Wsnc.jpg)
+![Materia Prima | @HEAD—Genève, Laís Kunzendorff](https://i.imgur.com/SxywkGV.jpg)
+![Materia Prima | @HEAD—Genève, Laís Kunzendorff](https://i.imgur.com/AOBBW9S.jpg)
+![Materia Prima | @HEAD—Genève, Laís Kunzendorff](https://i.imgur.com/Hj4Wsnc.jpg)

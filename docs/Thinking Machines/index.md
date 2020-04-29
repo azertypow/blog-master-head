@@ -34,6 +34,7 @@ Thinking Machines radically transforms designers' workflow by revisiting the con
 :::
 
 
+
 ::: vimeo https://vimeo.com/408045708
 
 Video © [Vincent de Vevey](http://vincentdevevey.com)
@@ -45,17 +46,18 @@ While industrial automation finishes the final touches of replacing physical lab
 
 Design is an obvious ‘next target’ of this automation process.
  
-This collective project realized by first year students from Master Media at HEAD – Genève asks what new design strategies could re-engage us with the humanist principles at work from the beginnings of computer science.
+This collective project, realised by first year students from [Media Design Master](https://mastermediadesign.ch) at [HEAD – Genève](https://www.hesge.ch/head/) asks what new design strategies could re-engage us with the humanist principles at work from the beginnings of computer science.
  
  ## A Loom to generate stories  
  
-The Loom is an an automated publishing  workflow that operates on machine learning, hand shadows, text generator, tools for the web and voice recognition.  
+*The Loom* is a human <> machine collaborative publishing system for generating bespoke narratives. It uses punch cards, text transformers, hand shadows, voice recognition, machine learning and web publishing tools to build these singular tales.
 
-It starts with a perforated card to fill and some (not so random) questions to answer. You are then guided from one station to the next to create your own story. Each station unlocks a new interaction from generating a text with an AI, drawing your layout with a pen or creating your visuals with hand shadow. The result is a unique small booklet co-created by you and a series of digital assistants.
+It all starts with a punch card, and a series of (not so innocent) questions. To begin the process, carefully fill in your answers and place the card into the machine. The machine analyses your choices, and leads you from station to station through each of the steps required to generate your tale. Each station unlocks its own form of interaction, allowing you to collaboratively guide the AI: a felt-tip pen allows you to draw your layout freehand; illustrations are selected by interpreting your hands over a lightbox; while your voice allows you to dialogue back and forth with the machine as it asks you to help it flesh out the details of your narrative. The result is a hand-machine-crafted booklet, co-created by you and a series of digital assistants.
 
-With a certain sense of irony, The Loom outlines a stark, even dystopian view of the future of visual communication. But deep downs, The Loom wishes to return to a number of early principles that gave birth to the computer sciences, personal computers, open source communities, and a world wide web of collective collaboration.
+Not without a certain sense of irony, *The Loom* outlines a stark, even dystopian view of the future of visual communication. But it also suggests a possible alternative, as we return to many of the principles that animated early computer science, the personal computer revolution, open source communities, and a world-wide web of collective forms of knowledge production. The old becomes the new becomes the old — and round and round again.
 
 
+### Instructions to create visuals with hand shadow
 ![](https://i.imgur.com/5JW0epY.jpg)
 ![](https://i.imgur.com/ZrjkFzd.jpg)
 ![](https://i.imgur.com/Dg48H0c.jpg)
@@ -73,7 +75,8 @@ With a certain sense of irony, The Loom outlines a stark, even dystopian view of
 ![](https://i.imgur.com/6F36JXB.jpg)
 
 
--> Galery avec poster, et installation image fix de the loom
+### *The Loom* Concept
+![First installation proposition](https://i.imgur.com/rxjBHk6.jpg)
+![Technical mecanism](https://i.imgur.com/9o3olgD.jpg)
 
-![](https://i.imgur.com/rxjBHk6.jpg)
-![](https://i.imgur.com/9o3olgD.jpg)
+##### Source code on [GitHub](https://github.com/abstractmachine/ThinkingMachines)
