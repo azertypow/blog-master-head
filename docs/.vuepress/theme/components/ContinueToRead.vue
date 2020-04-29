@@ -10,12 +10,12 @@
                 </div>
             </div>
 
-            <div class="v-continue-to-read__right">
-                <h3>next -></h3>
+            <a class="v-continue-to-read__right l-ui-link-no-style" :href="nextArticle.path">
+                <h3>Continue to read</h3>
                 <div>
-                    next article title
+                    {{ nextArticle.title }} -->
                 </div>
-            </div>
+            </a>
 
         </div>
 
@@ -24,9 +24,25 @@
 
 <script lang="ts">
     import { Vue, Component, Prop } from "vue-property-decorator";
+    import {PageComputed} from "vuepress-types"
 
     @Component
     export default class ContinueToRead extends Vue {
+
+      get nextArticle(): PageComputed {
+
+        const articles = this.$site.pages.filter(value => {
+          return value.relativePath.split("/").length === 2
+        })
+
+        const currentIndex = articles.findIndex((value) => {
+          return value.path === this.$page.path
+        })
+
+        const nextIndex = (currentIndex+1 < 0 || currentIndex+1 > articles.length - 1) ? 0 : currentIndex + 1
+
+        return articles[nextIndex]
+      }
 
     }
 </script>
@@ -47,8 +63,8 @@
 
     .v-continue-to-read__left {
         @include grid-coll-number(1, 2);
-        padding-top: $line-height;
-        padding-bottom: $line-height;
+        padding-top: $line-height / 4;
+        padding-bottom: $line-height / 2;
         padding-left: $grid-gutter-width / 2;
         padding-right: $grid-gutter-width / 2;
 
@@ -66,8 +82,8 @@
 
     .v-continue-to-read__right {
         @include grid-coll-number(1, 2);
-        padding-top: $line-height;
-        padding-bottom: $line-height;
+        padding-top: $line-height / 4;
+        padding-bottom: $line-height / 2;
         padding-left: $grid-gutter-width / 2;
         padding-right: $grid-gutter-width / 2;
 
