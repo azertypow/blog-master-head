@@ -19,3 +19,10 @@
   padding: 0;
 }
 
+.l-ui-items {
+  @include column-container;
+
+  > * {
+    margin-right: $grid-gutter-width;
+  }
+}

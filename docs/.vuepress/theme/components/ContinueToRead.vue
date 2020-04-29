@@ -4,16 +4,18 @@
         <div class="v-continue-to-read__container">
 
             <div class="v-continue-to-read__left">
-                <h3>ne rien raté </h3>
-                <div>
-                    social links icons
+                <h3>keep informed</h3>
+                <div class="l-ui-items">
+                    <a href="" class="l-ui-link-no-style">Twitter</a>
+                    <a href="" class="l-ui-link-no-style">Instagram</a>
+                    <a href="" class="l-ui-link-no-style">Vimeo</a>
                 </div>
             </div>
 
             <a class="v-continue-to-read__right l-ui-link-no-style" :href="nextArticle.path">
-                <h3>Continue to read</h3>
+                <h3>continue to read</h3>
                 <div>
-                    {{ nextArticle.title }} -->
+                    {{ nextArticle.title }} ->
                 </div>
             </a>
 

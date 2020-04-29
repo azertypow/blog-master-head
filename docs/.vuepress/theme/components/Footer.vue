@@ -4,11 +4,13 @@
 
         <div class="v-footer__left"></div>
 
-        <div class="v-footer__center"></div>
+        <div class="v-footer__center">
+            <h6>about ↓</h6>
+        </div>
 
         <div class="v-footer__right">
             <h6 @click="this.openContactWindow" >
-                <span class="l-ui-link-no-style">© 2020 Master Media Design, HEAD — Genève</span> -->
+                <span class="l-ui-link-no-style">© 2020 Master Media Design, HEAD — Genève ↗</span>
             </h6>
 <!--            <h6><span >Nicolas Baldran et David Héritier</span></h6>-->
         </div>
