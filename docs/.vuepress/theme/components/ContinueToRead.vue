@@ -6,9 +6,10 @@
             <div class="v-continue-to-read__left">
                 <h3>keep informed</h3>
                 <div class="l-ui-items">
-                    <a href="" class="l-ui-link-no-style">Twitter</a>
-                    <a href="" class="l-ui-link-no-style">Instagram</a>
-                    <a href="" class="l-ui-link-no-style">Vimeo</a>
+                    <a href="https://twitter.com/HeadMediaDesign" class="l-ui-link-no-style">Twitter</a>
+                    <a href="https://www.instagram.com/headmediadesign/" class="l-ui-link-no-style">Instagram</a>
+                    <a href="https://vimeo.com/headmediadesign" class="l-ui-link-no-style">Vimeo</a>
+                    <a href="https://www.hesge.ch/head/en/programs-research/master-arts-media-design" class="l-ui-link-no-style">Head—Genève</a>
                 </div>
             </div>
 
@@ -55,6 +56,8 @@
 
     .v-continue-to-read {
         border-top: solid 1px $site-color;
+        position: relative;
+        background: $site-theme-color;
     }
 
     .v-continue-to-read__container {

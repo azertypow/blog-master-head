@@ -2,7 +2,7 @@
     <section class="v-gallery-image" @click="closeGallery">
         <img :src="prop.src" :alt="prop.alt">
         <div class="v-gallery-image__title-container">
-            <h1 class="v-gallery-image__title">{{prop.alt}}</h1>
+            <h6 class="v-gallery-image__title">{{prop.alt}}</h6>
         </div>
     </section>
 </template>
@@ -43,20 +43,18 @@
 
     .v-gallery-image__title-container {
         width: 100%;
-        padding-left: $grid-gutter-width;
-        padding-right: $grid-gutter-width;
         box-sizing: border-box;
         position: absolute;
         left: 0;
-        bottom: 60px;
+        bottom: $line-height / 4;
     }
 
     .v-gallery-image__title {
-        font-weight: 900;
-        font-size: 45px;
-        line-height: 50px;
         margin: 0;
         @include grid-gap-left-coll(2, 12);
+        box-sizing: border-box;
+        padding-left: $grid-gutter-width / 2;
+        padding-right: $grid-gutter-width / 2;
     }
 
     img {
