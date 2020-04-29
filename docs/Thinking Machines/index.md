@@ -48,7 +48,8 @@ Design is an obvious ‘next target’ of this automation process.
  
 This collective project, realised by first year students from [Media Design Master](https://mastermediadesign.ch) at [HEAD – Genève](https://www.hesge.ch/head/) asks what new design strategies could re-engage us with the humanist principles at work from the beginnings of computer science.
  
- ## A Loom to generate stories  
+ 
+## A Loom to generate stories  
  
 *The Loom* is a human <> machine collaborative publishing system for generating bespoke narratives. It uses punch cards, text transformers, hand shadows, voice recognition, machine learning and web publishing tools to build these singular tales.
 
@@ -79,4 +80,5 @@ Not without a certain sense of irony, *The Loom* outlines a stark, even dystopia
 ![First installation proposition](https://i.imgur.com/rxjBHk6.jpg)
 ![Technical mecanism](https://i.imgur.com/9o3olgD.jpg)
 
-##### Source code on [GitHub](https://github.com/abstractmachine/ThinkingMachines)
+
+##### [All source code on GitHub](https://github.com/abstractmachine/ThinkingMachines)
