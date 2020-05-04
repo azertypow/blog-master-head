@@ -7,7 +7,7 @@
         <div class="v-page-nav__top">
 
             <div class="v-page-nav__top__left">
-                <a class="l-ui-link-no-style" href="/">{{this.$site.title}}</a>
+                <RouterLink class="l-ui-link-no-style" to="/" >{{this.$site.title}}</RouterLink>
             </div>
 
             <div class="v-page-nav__top__center">

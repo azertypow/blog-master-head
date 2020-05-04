@@ -13,12 +13,12 @@
                 </div>
             </div>
 
-            <a class="v-continue-to-read__right l-ui-link-no-style" :href="nextArticle.path">
+            <RouterLink class="v-continue-to-read__right l-ui-link-no-style" :to="nextArticle.path">
                 <h3>continue to read</h3>
                 <div>
                     {{ nextArticle.title }} ->
                 </div>
-            </a>
+            </RouterLink>
 
         </div>
 
