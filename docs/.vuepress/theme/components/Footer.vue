@@ -59,6 +59,8 @@
         @include column-container;
         height: $footer-height;
         user-select: none;
+        max-width: 1280px;
+        margin: auto;
     }
 
     .v-footer__left {
