@@ -148,7 +148,7 @@ Amsatou Diop, Aurelie Belle
 ![Materia Prima | @HEAD—Genève, Laís Kunzendorff](https://i.imgur.com/d1b0MjC.jpg)
 
 
-The work 'matera prima' is an invitation to imagine post-apocalyptic scenarios of exploration of raw materials in the geographical context of the French Alps (Chamonix - Montblanc). Taking as a starting point the way in which mineral exploration has been carried out in developing countries, in particular iron ore and precious metals exploration cicles in Brazil, this work intends to make visible the consequences of exploration, devastation and environmental neglect by large corporations operating in these countries.
+*Matera Prima* is an invitation to imagine post-apocalyptic scenarios of exploration of raw materials in the geographical context of the French Alps (Chamonix - Montblanc). Taking as a starting point the way in which mineral exploration has been carried out in developing countries, in particular iron ore and precious metals exploration cicles in Brazil, this work intends to make visible the consequences of exploration, devastation and environmental neglect by large corporations operating in these countries.
 
 ![Materia Prima | @HEAD—Genève, Laís Kunzendorff](https://i.imgur.com/SxywkGV.jpg)
 ![Materia Prima | @HEAD—Genève, Laís Kunzendorff](https://i.imgur.com/AOBBW9S.jpg)
