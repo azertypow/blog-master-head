@@ -36,8 +36,10 @@ We spent several days in the Chamonix Valley, documenting the presence of differ
 
 At the crossroads of design and ethnography, this workshop aimed to teach the importance of observation in the context of the environmental crisis. While designers are often asked to find “solutions”, we chose to take a step back and adopt a different approach. Our field trip aimed to understand local parameters and constraints of the man-made technosphere, in order to highlight the various ranges of technological issues at stake in a mountain context. We hope that such projects can add nuances about the future ways of living in the Alps.
 
+
 ## Interview with the Alps
 ###### by Gabriel Abergel and Johan Pardo
+
 
 ::: vimeo https://vimeo.com/392232368
 
@@ -89,7 +91,18 @@ Amsatou Diop, Aurelie Belle
 :::
 
 
---> small project description
+We wantedto start by looking at the common and must known places in Chamonix. In each place we visited, we tried to lookfor stones that would be interesting for us. Each stone was then put ina plastic bag whit a number and the GPS coordinates of where we found the stones put on maps.
+
+The big stone present on the final project is the one we found at the cemetery. Covered in snow and grass, it struck us by the fact that it wasn’t there by nature but brought there by man. We took pictures of it to scan it and import in 3D.
+
+After our research we realized that we found 3 types of stones:
+- Natural stones : with natural composition
+- Hybrid stones : between natural composition and modified by men
+- Artificial stones : modified by men
+
+To showcase the different textures and stones abrasions, we decided to reproduce in 3D, the majestual stone we found in the cemetery. We draw our path around the stone, allowing the viewer to go aroundit and with every turn the texture of the stone changes to reveal a new texture.This is our way to make each viewer travel on the same path we tookand discovering Chamonix trough his stones.
+
+Three shorts videos where also made to showcase the three types of stones with a light to differentiatethem (natural light for natural stones, exaggeratedwhite light for hybridstones and blue/purple light for artificial stones). 
 
 
 ::: vimeo https://vimeo.com/392225236
@@ -103,8 +116,6 @@ Amsatou Diop, Aurelie Belle
 :::
 
 
-
-
 ::: vimeo https://vimeo.com/392228733
 
 Rock Station
@@ -114,9 +125,6 @@ Artificial Stones
 Amsatou Diop, Aurelie Belle
 
 :::
-
-
-
 
 
 ::: vimeo https://vimeo.com/392227662
@@ -140,7 +148,7 @@ Amsatou Diop, Aurelie Belle
 ![Materia Prima | @HEAD—Genève, Laís Kunzendorff](https://i.imgur.com/d1b0MjC.jpg)
 
 
---> small project description
+The work 'matera prima' is an invitation to imagine post-apocalyptic scenarios of exploration of raw materials in the geographical context of the French Alps (Chamonix - Montblanc). Taking as a starting point the way in which mineral exploration has been carried out in developing countries, in particular iron ore and precious metals exploration cicles in Brazil, this work intends to make visible the consequences of exploration, devastation and environmental neglect by large corporations operating in these countries.
 
 ![Materia Prima | @HEAD—Genève, Laís Kunzendorff](https://i.imgur.com/SxywkGV.jpg)
 ![Materia Prima | @HEAD—Genève, Laís Kunzendorff](https://i.imgur.com/AOBBW9S.jpg)
