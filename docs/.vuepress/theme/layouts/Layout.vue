@@ -115,12 +115,6 @@ export default class Layout extends Vue {
   }
 
   updateHeaderVariables() {
-
-    console.log("update")
-
-    // get all image in article
-    this.allImagesInContent = this.$el.querySelectorAll("img")
-
     // set article title to the html > main > header
     const contentInstance = this.$refs.articlesContent
 
@@ -225,9 +219,6 @@ export default class Layout extends Vue {
           }
 
         })
-
-        // articleContainer.$el.insertBefore(imagesContainer, pElement.nextSibling)
-        // if(pElement.childElementCount === 0) pElement.style.display = "none"
 
         pElement.appendChild( imagesContainer )
         pElement.classList.add( "ts-has-image-container" )
