@@ -67,6 +67,7 @@ import PageNav from "../components/PageNav.vue"
 import Footer from "../components/Footer.vue"
 import GalleryImage from "../components/GalleryImage.vue"
 import ContinueToRead from "../components/ContinueToRead.vue"
+import {ImageLazyLoad} from "../util/ImageLazyLoad"
 
 @Component({
   components: {ContinueToRead, Footer, PageNav, PageHeader, ListOfStudents, GalleryImage},
@@ -84,7 +85,9 @@ import ContinueToRead from "../components/ContinueToRead.vue"
   watch:{
     $route (this: Layout, to, from){
       this.$nextTick(() => {
+        this.setImgLazyLoad()
         this.updateHeaderVariables()
+        this.setImageLayout()
       })
     }
   }
@@ -131,32 +134,10 @@ export default class Layout extends Vue {
     const imgInContent = articleContainer.$el.querySelectorAll("img")
 
     imgInContent.forEach(imageElement => {
-      const originSrc = imageElement.src
-      imageElement.dataset.src = originSrc
 
-      imageElement.src = ""
-
-      const fileName = originSrc.split("/").pop()
-
-      const smallImageName = "icon-" + fileName
-
-      const smallImagePath = `http://distortion.mastermediadesign.ch/resources${this.$page.path}${smallImageName}`
-
-      console.log( smallImagePath )
-
-      imageElement.src = smallImagePath
+      store.addCurrentsImageLazyLoad( new ImageLazyLoad( imageElement, this.$page.path ) )
 
     })
-
-    imgInContent.forEach( imageElement => {
-      const imageLoader = new Image()
-
-      if(imageElement.dataset.src) {
-        imageLoader.src = imageElement.dataset.src
-        imageLoader.addEventListener("load", () => {imageElement.src = imageLoader.src}, {once: true})
-      }
-    })
-
   }
 
   setImageLayout() {
