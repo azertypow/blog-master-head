@@ -1,6 +1,6 @@
 ---
 
-speakers:
+professors:
     - Jürg Lehni: http://juerglehni.com
     - Douglas Edric Stanley: http://www.abstractmachine.net
 
@@ -22,6 +22,8 @@ cover: "https://i.imgur.com/k1ZIXl9.gif"
 
 cover-color: "#000000"
 
+draft: false
+
 ---
 
 
@@ -40,6 +42,14 @@ Thinking Machines radically transforms designers' workflow by revisiting the con
 Video © [Vincent de Vevey](http://vincentdevevey.com)
 
 :::
+
+
+![@Head – Genève, Michel Giesbrecht](https://i.imgur.com/Nihfblk.jpg)
+![@Head – Genève, Michel Giesbrecht](https://i.imgur.com/hEYrADz.jpg)
+![@Head – Genève, Michel Giesbrecht](https://i.imgur.com/MY8Do0j.jpg)
+![@Head – Genève, Michel Giesbrecht](https://i.imgur.com/fr48q3I.jpg)
+![@Head – Genève, Michel Giesbrecht](https://i.imgur.com/yHVacpJ.jpg)
+![@Head – Genève, Michel Giesbrecht](https://i.imgur.com/X2CJpke.jpg)
 
 
 While industrial automation finishes the final touches of replacing physical labor with computer-controlled machines, it is now the turn of the “white-collar” jobs to be replaced by software robots. Writers , mid-level managers, commercial vendors, medical analysts  — all of these fields, along with many others, are in the process of being automated by machines. 
