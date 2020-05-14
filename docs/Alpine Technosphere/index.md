@@ -56,8 +56,12 @@ Exploration and data collection in the Chamonix valley, as part of research on t
 Guided by the senses, we followed the sounds of the valley, from the urban sounds to the sounds of nature, while identifying the images associated with them. During this 3-day interview of the valley, we were able to reveal, thanks to the different samples taken, a soundscape that we showed through a 3-dimensional visualization.
 
 
-![Interview with the Alps | @HEAD—Genève, Gabriel Abergel, Johan Pardo](https://i.imgur.com/HTEnRFG.jpg)
-![Interview with the Alps | @HEAD—Genève, Gabriel Abergel, Johan Pardo](https://i.imgur.com/JLa54TP.jpg)
+![Interview with the Alps | @Head – Genève, Gabriel Abergel, Johan Pardo](https://i.imgur.com/HTEnRFG.jpg)
+![Interview with the Alps | @Head – Genève, Gabriel Abergel, Johan Pardo](https://i.imgur.com/JLa54TP.jpg)
+
+![Interview with the Alps | @Head – Genève, Gabriel Abergel, Johan Pardo](https://i.imgur.com/V4iLLB6.jpg)
+![Interview with the Alps | @Head – Genève, Gabriel Abergel, Johan Pardo](https://i.imgur.com/G2Ej4GM.jpg)
+![Interview with the Alps | @Head – Genève, Gabriel Abergel, Johan Pardo](https://i.imgur.com/0sNMJIS.jpg)
 
 
 ::: vimeo https://vimeo.com/392233275
@@ -140,18 +144,42 @@ Amsatou Diop, Aurelie Belle
 :::
 
 
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/aXCPL8N.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/dQ7eZjp.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/nM9qdJJ.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/UhSNMsg.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/awXk9dA.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/V9L1A5A.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/IYjW4In.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/f2O5tgU.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/llPPurD.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/QPXhb5C.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/vsWnKt2.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/e4hV84d.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/eA7HfOv.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/2L9FTUD.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/tKj1nVJ.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/vH13I3g.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/9qA9rQY.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/vDZyjqG.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/GFN8iLi.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/MBrsRnj.jpg)
+![Rock Station, Artificial Stones | @Head – Genève, Amsatou Diop, Aurelie Belle](https://i.imgur.com/hz9A9vV.jpg)
+
+
+
 ## Materia Prima
 ###### by Laís Kunzendorff
 
-![Materia Prima | @HEAD—Genève, Laís Kunzendorff](https://i.imgur.com/0G0lWjs.jpg)
+![Materia Prima | @Head – Genève, Laís Kunzendorff](https://i.imgur.com/0G0lWjs.jpg)
 
-![Materia Prima | @HEAD—Genève, Laís Kunzendorff](https://i.imgur.com/PY9YP4u.jpg)
+![Materia Prima | @Head – Genève, Laís Kunzendorff](https://i.imgur.com/PY9YP4u.jpg)
 
-![Materia Prima | @HEAD—Genève, Laís Kunzendorff](https://i.imgur.com/d1b0MjC.jpg)
+![Materia Prima | @Head – Genève, Laís Kunzendorff](https://i.imgur.com/d1b0MjC.jpg)
 
 
 *Matera Prima* is an invitation to imagine post-apocalyptic scenarios of exploration of raw materials in the geographical context of the French Alps (Chamonix - Montblanc). Taking as a starting point the way in which mineral exploration has been carried out in developing countries, in particular iron ore and precious metals exploration cicles in Brazil, this work intends to make visible the consequences of exploration, devastation and environmental neglect by large corporations operating in these countries.
 
-![Materia Prima | @HEAD—Genève, Laís Kunzendorff](https://i.imgur.com/SxywkGV.jpg)
-![Materia Prima | @HEAD—Genève, Laís Kunzendorff](https://i.imgur.com/AOBBW9S.jpg)
-![Materia Prima | @HEAD—Genève, Laís Kunzendorff](https://i.imgur.com/Hj4Wsnc.jpg)
+![Materia Prima | @Head – Genève, Laís Kunzendorff](https://i.imgur.com/SxywkGV.jpg)
+![Materia Prima | @Head – Genève, Laís Kunzendorff](https://i.imgur.com/AOBBW9S.jpg)
+![Materia Prima | @Head – Genève, Laís Kunzendorff](https://i.imgur.com/Hj4Wsnc.jpg)
