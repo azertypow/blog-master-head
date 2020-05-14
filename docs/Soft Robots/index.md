@@ -22,6 +22,8 @@ cover: ""
 
 cover-color: ""
 
+draft: true
+
 ---
 
 # Soft Robots
