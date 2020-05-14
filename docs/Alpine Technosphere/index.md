@@ -102,9 +102,9 @@ We wantedto start by looking at the common and must known places in Chamonix. In
 The big stone present on the final project is the one we found at the cemetery. Covered in snow and grass, it struck us by the fact that it wasn’t there by nature but brought there by man. We took pictures of it to scan it and import in 3D.
 
 After our research we realized that we found 3 types of stones:
-- Natural stones : with natural composition
-- Hybrid stones : between natural composition and modified by men
-- Artificial stones : modified by men
+- Natural stones: with natural composition
+- Hybrid stones: between natural composition and modified by men
+- Artificial stones: modified by men
 
 To showcase the different textures and stones abrasions, we decided to reproduce in 3D, the majestual stone we found in the cemetery. We draw our path around the stone, allowing the viewer to go aroundit and with every turn the texture of the stone changes to reveal a new texture.This is our way to make each viewer travel on the same path we tookand discovering Chamonix trough his stones.
 
