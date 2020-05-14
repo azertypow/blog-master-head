@@ -61,11 +61,16 @@ This collective project, realised by first year students from [Media Design Mast
  
 ## A Loom to generate stories  
  
-*The Loom* is a human <> machine collaborative publishing system for generating bespoke narratives. It uses punch cards, text transformers, hand shadows, voice recognition, machine learning and web publishing tools to build these singular tales.
+*The Loom* is a human <-> machine collaborative publishing system for generating bespoke narratives. It uses punch cards, text transformers, hand shadows, voice recognition, machine learning and web publishing tools to build these singular tales.
 
 It all starts with a punch card, and a series of (not so innocent) questions. To begin the process, carefully fill in your answers and place the card into the machine. The machine analyses your choices, and leads you from station to station through each of the steps required to generate your tale. Each station unlocks its own form of interaction, allowing you to collaboratively guide the AI: a felt-tip pen allows you to draw your layout freehand; illustrations are selected by interpreting your hands over a lightbox; while your voice allows you to dialogue back and forth with the machine as it asks you to help it flesh out the details of your narrative. The result is a hand-machine-crafted booklet, co-created by you and a series of digital assistants.
 
 Not without a certain sense of irony, *The Loom* outlines a stark, even dystopian view of the future of visual communication. But it also suggests a possible alternative, as we return to many of the principles that animated early computer science, the personal computer revolution, open source communities, and a world-wide web of collective forms of knowledge production. The old becomes the new becomes the old — and round and round again.
+
+### Punch cards sample
+![](https://i.imgur.com/g0toDHp.jpg)
+![](https://i.imgur.com/wTUSaMT.jpg)
+![](https://i.imgur.com/DyGuPA1.jpg)
 
 
 ### Instructions to create visuals with hand shadow
