@@ -1,6 +1,6 @@
 ---
 
-speakers: 
+professors: 
     - Marie Dommenget: http://www.mariedommenget.com
     - Nicolas Nova: https://www.hesge.ch/head/en/annuaire/nicolas-nova
     
@@ -19,6 +19,8 @@ date: 10.04.2020
 cover:
 
 cover-color: ""
+
+draft: false
 
 ---
 
