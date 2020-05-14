@@ -1,17 +1,17 @@
 <template>
     <aside class="v-list-of-students">
 
-        <div v-if="listOfSpeakers">
-            <div class="v-list-of-students__section-title">speakers</div>
-            <div v-for="(externalLink, speaker) in listOfSpeakers " >
+        <div v-if="listOfProfessors">
+            <div class="v-list-of-students__section-title">professors</div>
+            <div v-for="(externalLink, professors) in listOfProfessors " >
 
                 <a v-if="externalLink.length"
                    :href="externalLink"
                    target="_blank"
                    class="l-ui-link"
-                >{{speaker}}</a>
+                >{{professors}}</a>
 
-                <div v-else>{{speaker}}</div>
+                <div v-else>{{professors}}</div>
 
             </div>
         </div>
@@ -55,31 +55,30 @@
 
     @Component({
       mounted(this: ListOfStudents) {
-        const repperElement = document.querySelector('.ts-fixed-repper')
 
-        if (repperElement instanceof HTMLElement) {
 
           this.scrollEvent = () => {
 
-            const elementIsFixed = this.$el.classList.contains(this.CLASS_NAME_WHEN_FIX)
+            const repperElement = document.querySelector('.ts-fixed-repper') || undefined
 
-            if (repperElement.getBoundingClientRect().top < this.HEIGHT_OF_HEADER && !elementIsFixed) {
+            if (repperElement instanceof HTMLElement) {
+                const elementIsFixed = this.$el.classList.contains(this.CLASS_NAME_WHEN_FIX)
 
-              this.$el.classList.add(this.CLASS_NAME_WHEN_FIX)
+                if (repperElement.getBoundingClientRect().top < this.HEIGHT_OF_HEADER && !elementIsFixed) {
 
-            } else if (repperElement.getBoundingClientRect().top >= this.HEIGHT_OF_HEADER && elementIsFixed) {
+                  this.$el.classList.add(this.CLASS_NAME_WHEN_FIX)
 
-              this.$el.classList.remove(this.CLASS_NAME_WHEN_FIX)
+                } else if (repperElement.getBoundingClientRect().top >= this.HEIGHT_OF_HEADER && elementIsFixed) {
 
+                  this.$el.classList.remove(this.CLASS_NAME_WHEN_FIX)
+
+                }
             }
 
           }
 
           window.addEventListener("scroll", this.scrollEvent)
 
-        } else {
-          console.error('no fixed repper')
-        }
       }
     })
     export default class ListOfStudents extends Vue {
@@ -95,9 +94,9 @@
         return null
       }
 
-      get listOfSpeakers(): ILinkFrontmatter | null {
-        const speakers = ( this.$page.frontmatter as IPageFrontmatter ).speakers
-        if ( speakers ) return cleanObjectToILinkFrontmatter( speakers )
+      get listOfProfessors(): ILinkFrontmatter | null {
+        const professors = ( this.$page.frontmatter as IPageFrontmatter ).professors
+        if ( professors ) return cleanObjectToILinkFrontmatter( professors )
         return null
       }
 

@@ -5,7 +5,7 @@
 
         <img v-if="imageHeader !== null"
              :src="imageHeader"
-             :alt="'cover of ' + $page.title + 'article. HEAD — Genève'">
+             :alt="'cover of ' + $page.title + 'article. Head&nbsp;–&nbsp;Genève'">
 
     </header>
 </template>

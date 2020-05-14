@@ -1,7 +1,7 @@
 import {PageFrontmatter} from "vuepress-types"
 
 export interface IPageFrontmatter extends PageFrontmatter {
-  speakers?:    (string | ILinkFrontmatter) []
+  professors?:    (string | ILinkFrontmatter) []
   students?:    (string | ILinkFrontmatter) []
   assistants?:  (string | ILinkFrontmatter) []
   date?: string

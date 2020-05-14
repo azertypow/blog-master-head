@@ -50,3 +50,7 @@ h2 {
 h1 {
   @include font-6;
 }
+
+.l-font-tab-number {
+  font-feature-settings: 'kern' 1, 'tnum' 1;
+}

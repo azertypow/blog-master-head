@@ -20,8 +20,8 @@
         </div>
 
         <div class="l-app-content__info__right">
-          <h6>speakers: <span
-                  v-for="(speaker, index) of this.$page.frontmatter.speakers"
+          <h6>professors: <span
+                  v-for="(speaker, index) of this.$page.frontmatter.professors"
           ><template v-if="index > 0">, </template>{{ Object.keys( speaker )[0] }}</span>
           </h6>
         </div>

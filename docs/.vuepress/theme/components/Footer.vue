@@ -10,7 +10,7 @@
 
             <div class="v-footer__right">
                 <h6 @click="toggleAbout" >
-                    <span class="l-ui-link-no-style">© 2020 Master Media Design, HEAD — Genève</span>
+                    <span class="l-ui-link-no-style">© 2020 Master Media Design, Head&nbsp;–&nbsp;Genève</span>
                 </h6>
     <!--            <h6><span >Nicolas Baldran et David Héritier</span></h6>-->
             </div>
@@ -53,6 +53,8 @@
         overflow: hidden;
         box-sizing: border-box;
         border-top: solid 1px;
+        position: relative;
+        background: $site-theme-color;
     }
 
     .v-footer__top {

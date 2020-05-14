@@ -4,17 +4,17 @@
         <div class="v-continue-to-read__container">
 
             <div class="v-continue-to-read__left">
-                <h3>keep informed</h3>
+                <h3>Follow us</h3>
                 <div class="l-ui-items">
                     <a href="https://twitter.com/HeadMediaDesign" class="l-ui-link-no-style">Twitter</a>
                     <a href="https://www.instagram.com/headmediadesign/" class="l-ui-link-no-style">Instagram</a>
                     <a href="https://vimeo.com/headmediadesign" class="l-ui-link-no-style">Vimeo</a>
-                    <a href="https://www.hesge.ch/head/en/programs-research/master-arts-media-design" class="l-ui-link-no-style">Head—Genève</a>
+                    <a href="https://www.hesge.ch/head/en/programs-research/master-arts-media-design" class="l-ui-link-no-style">Head&nbsp;–&nbsp;Genève</a>
                 </div>
             </div>
 
             <RouterLink class="v-continue-to-read__right l-ui-link-no-style" :to="nextArticle.path">
-                <h3>continue to read</h3>
+                <h3>Next project</h3>
                 <div>
                     {{ nextArticle.title }} ->
                 </div>
