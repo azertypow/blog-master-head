@@ -21,6 +21,20 @@
       padding-right: $grid-gutter-width / 2;
       box-sizing: border-box;
     }
+
+  }
+
+  > ul {
+    padding-left: $grid-gutter-width !important;
+  }
+
+  li {
+    display: block;
+
+    &:before {
+      content: "–";
+      padding-right: $grid-gutter-width / 2;
+    }
   }
 
   .l-page__intro {
