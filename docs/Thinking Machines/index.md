@@ -44,12 +44,12 @@ Video © [Vincent de Vevey](http://vincentdevevey.com)
 :::
 
 
-![](https://i.imgur.com/Nihfblk.jpg)
-![](https://i.imgur.com/hEYrADz.jpg)
-![](https://i.imgur.com/MY8Do0j.jpg)
-![](https://i.imgur.com/fr48q3I.jpg)
-![](https://i.imgur.com/yHVacpJ.jpg)
-![](https://i.imgur.com/X2CJpke.jpg)
+![@Head – Genève, Michel Giesbrecht](https://i.imgur.com/Nihfblk.jpg)
+![@Head – Genève, Michel Giesbrecht](https://i.imgur.com/hEYrADz.jpg)
+![@Head – Genève, Michel Giesbrecht](https://i.imgur.com/MY8Do0j.jpg)
+![@Head – Genève, Michel Giesbrecht](https://i.imgur.com/fr48q3I.jpg)
+![@Head – Genève, Michel Giesbrecht](https://i.imgur.com/yHVacpJ.jpg)
+![@Head – Genève, Michel Giesbrecht](https://i.imgur.com/X2CJpke.jpg)
 
 
 While industrial automation finishes the final touches of replacing physical labor with computer-controlled machines, it is now the turn of the “white-collar” jobs to be replaced by software robots. Writers , mid-level managers, commercial vendors, medical analysts  — all of these fields, along with many others, are in the process of being automated by machines. 
