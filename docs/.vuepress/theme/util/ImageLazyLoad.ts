@@ -43,8 +43,6 @@ export class ImageLazyLoad {
 
         setTimeout(() => {
 
-          console.log("check loading for: ", this.img, this.isVisibleByUser)
-
           if( this.isVisibleByUser ) {
             this.setImageHas("original")
 

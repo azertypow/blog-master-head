@@ -32,8 +32,6 @@
       private videoInfo?: IVimeoEmbedJSON
 
       async setVimeoPlayer() {
-        console.log(this.$refs.vimeoContainer)
-
         const fetchResponse = await fetch(`https://vimeo.com/api/oembed.json?url=${this.src}&byline=false&color=FFFFFF&title=false&transparent=false`)
 
         this.videoInfo = await fetchResponse.json()
@@ -41,7 +39,6 @@
 
       openVimeo() {
         if(this.videoInfo) {
-          console.log(this.videoInfo)
           const vimeoContainer = this.$refs.vimeoPlayer
           if(vimeoContainer instanceof HTMLElement) {
             vimeoContainer.innerHTML = this.videoInfo.html
