@@ -16,7 +16,11 @@ export class ImageLazyLoad {
     this.imgUrlOriginal = this.img.src
     this.img.src = ""
 
-    this.setImageHas("icon").then( () => { this.setListenerToLoadOriginalWhenImgIsVisible() })
+    this.setImageHas("icon")
+      .then( () => { this.setListenerToLoadOriginalWhenImgIsVisible() })
+      .catch(() => {
+        this.img.src = ""
+      })
 
   }
 
@@ -44,7 +48,10 @@ export class ImageLazyLoad {
         setTimeout(() => {
 
           if( this.isVisibleByUser ) {
-            this.setImageHas("original")
+
+            this.setImageHas("original").catch( () => {
+              this.img.src = ""
+            })
 
             document.removeEventListener("scroll", loadOnVisible)
             window.removeEventListener("resize", loadOnVisible)
