@@ -56,29 +56,17 @@
     @Component({
       mounted(this: ListOfStudents) {
 
+        this.scrollEvent = () => {
+          this.setPosition()
+        }
 
-          this.scrollEvent = () => {
+        window.addEventListener("scroll", this.scrollEvent)
 
-            const repperElement = document.querySelector('.ts-fixed-repper') || undefined
+        this.setPosition()
 
-            if (repperElement instanceof HTMLElement) {
-                const elementIsFixed = this.$el.classList.contains(this.CLASS_NAME_WHEN_FIX)
-
-                if (repperElement.getBoundingClientRect().top < this.HEIGHT_OF_HEADER && !elementIsFixed) {
-
-                  this.$el.classList.add(this.CLASS_NAME_WHEN_FIX)
-
-                } else if (repperElement.getBoundingClientRect().top >= this.HEIGHT_OF_HEADER && elementIsFixed) {
-
-                  this.$el.classList.remove(this.CLASS_NAME_WHEN_FIX)
-
-                }
-            }
-
-          }
-
-          window.addEventListener("scroll", this.scrollEvent)
-
+      },
+      updated(this: ListOfStudents) {
+        this.setPosition()
       }
     })
     export default class ListOfStudents extends Vue {
@@ -87,6 +75,26 @@
       private readonly CLASS_NAME_WHEN_FIX = "fixed"
 
       scrollEvent?: (ev: Event) => any
+
+      setPosition() {
+
+        const repperElement = document.querySelector('.ts-fixed-repper') || undefined
+
+        if (repperElement instanceof HTMLElement) {
+          const elementIsFixed = this.$el.classList.contains(this.CLASS_NAME_WHEN_FIX)
+
+          if (repperElement.getBoundingClientRect().top < this.HEIGHT_OF_HEADER && !elementIsFixed) {
+
+            this.$el.classList.add(this.CLASS_NAME_WHEN_FIX)
+
+          } else if (repperElement.getBoundingClientRect().top >= this.HEIGHT_OF_HEADER && elementIsFixed) {
+
+            this.$el.classList.remove(this.CLASS_NAME_WHEN_FIX)
+
+          }
+        }
+
+      }
 
       get listOfStudents(): ILinkFrontmatter | null {
         const students = ( this.$page.frontmatter as IPageFrontmatter ).students
