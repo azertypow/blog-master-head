@@ -16,7 +16,7 @@
         </div>
 
         <div class="v-about__right">
-            <h6>Distortion is a collection of special projects realized by students and professors in Master Media Design at HEAD – Genève. It is comprised of artefacts, installations, field trips, interviews and articles. Projects are born out of reflexions from our conference cycle called Distortion Series. We are currently focusing on two main topics: AI Cultures, the importance of artificial intelligence in the contemporary cultures of design and Technoshpere(s), the role of designers in the ecological transition.</h6>
+            <h6>Distortion is a collection of special projects realized by students and professors in Master Media Design at HEAD&nbsp;–&nbsp;Genève. It is comprised of artefacts, installations, field trips, interviews and articles. Projects are born out of reflexions from our conference cycle called Distortion Series. We are currently focusing on two main topics: AI Cultures, the importance of artificial intelligence in the contemporary cultures of design and Technoshpere(s), the role of designers in the ecological transition.</h6>
             <br>
             <h6><span class="l-font-tab-number">20.02.2020 </span><a class="l-ui-link" href="https://www.hesge.ch/head/en/node/5205"                                              >Technosphere(s)</a></h6>
             <h6><span class="l-font-tab-number">17.10.2020 </span><a class="l-ui-link" href="https://www.hesge.ch/head/en/node/5205"                                              >Conference AI CULTURES</a></h6>
