@@ -1,9 +1,14 @@
 <template>
     <section class="v-gallery-image" @click="closeGallery">
+
         <img :src="prop.src" :alt="prop.alt">
-        <div class="v-gallery-image__title-container">
-            <h6 class="v-gallery-image__title">{{prop.alt}}</h6>
+
+        <div class="v-gallery-image__bottom-box">
+            <div class="v-gallery-image__bottom">
+                <h6 class="v-gallery-image__bottom__title">{{prop.alt}}</h6>
+            </div>
         </div>
+
     </section>
 </template>
 
@@ -41,7 +46,7 @@
         cursor: pointer;
     }
 
-    .v-gallery-image__title-container {
+    .v-gallery-image__bottom-box {
         width: 100%;
         box-sizing: border-box;
         position: absolute;
@@ -49,7 +54,14 @@
         bottom: $line-height / 4;
     }
 
-    .v-gallery-image__title {
+    .v-gallery-image__bottom {
+        @include column-container;
+        width: 100%;
+        margin: auto;
+        max-width: 1280px;
+    }
+
+    .v-gallery-image__bottom__title {
         margin: 0;
         @include grid-gap-left-coll(2, 12);
         box-sizing: border-box;
