@@ -5,7 +5,7 @@
             <div class="v-footer__left"></div>
 
             <div class="v-footer__center">
-                <h6 @click="toggleAbout">about <template v-if="aboutIsOpen">↑</template><template v-else>↓</template></h6>
+                <h6 @click="toggleAbout">about <template v-if="arrowAboutDirectionToTop">↑</template><template v-else>↓</template></h6>
             </div>
 
             <div class="v-footer__right">
@@ -31,15 +31,35 @@
     })
     export default class Footer extends Vue {
 
-      aboutIsOpen = false
+      private pProps = {
+        aboutIsOpen: false
+      }
+
+      get aboutIsOpen(): boolean {
+        if( this.isHome ) return true
+        return this.pProps.aboutIsOpen
+      }
+
+      get arrowAboutDirectionToTop() {
+        if( this.isHome ) return false
+        return this.pProps.aboutIsOpen
+      }
+
+      get isHome() {
+        return this.$page.path === '/'
+      }
 
       toggleAbout() {
-        this.aboutIsOpen = !this.aboutIsOpen
-        setTimeout(() => {
-            window.scroll({
-              top: document.body.getBoundingClientRect().height
-            })
-        }, 150)
+        if( !this.isHome ) {
+
+            this.pProps.aboutIsOpen = !this.aboutIsOpen
+            setTimeout(() => {
+                window.scroll({
+                  top: document.body.getBoundingClientRect().height
+                })
+            }, 150)
+
+        }
       }
     }
 </script>

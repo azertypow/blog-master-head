@@ -44,8 +44,8 @@
         background-color: $site-color;
         color: $site-theme-color;
         @include column-container;
-        padding-top: $line-height / 2;
-        padding-bottom: $line-height / 2;
+        padding-top: $font-small--line-height;
+        padding-bottom: $font-small--line-height;
         align-items: baseline;
     }
 
