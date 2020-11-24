@@ -5,8 +5,9 @@
   overflow: hidden;
   box-sizing: border-box;
   margin: auto;
-  min-height: calc( 100vh - #{$nav-height + $footer-height + 1px + $bottom-spacing + $font-small--line-height * 10} ); //+ 1px for border of footer
+  min-height: 100vh;
   margin-bottom: $bottom-spacing;
+  transition: min-height 500ms;
 
   > section {
     position: relative;

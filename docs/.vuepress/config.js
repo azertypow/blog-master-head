@@ -7,6 +7,11 @@ module.exports = {
     },
   },
 
+  head: [
+      ['link', {rel: 'shortcut icon', href: '/resources/favicon.png'}],
+      ['link', {rel: 'apple-touch-icon', href: '/resources/touchicon-180.png'}],
+  ],
+
   themeConfig: {
     articlesNames: "series"
   },

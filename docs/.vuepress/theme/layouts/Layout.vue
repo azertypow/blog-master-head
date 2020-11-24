@@ -3,9 +3,12 @@
 
     <PageNav></PageNav>
 
-    <PageHeader></PageHeader>
+    <PageHeader ref="pageHeader"></PageHeader>
 
-    <main class="l-app-content">
+    <main class="l-app-content"
+          ref="appMain" :style="{
+      minHeight: mainMinHeight
+    }">
 
       <div class="l-app-content__info"
            v-if="$page.path !== '/'">
@@ -52,7 +55,7 @@
             v-if="$page.path !== '/'"
     />
 
-    <Footer></Footer>
+    <Footer ref="appFooter"></Footer>
 
   </div>
 </template>
@@ -76,6 +79,7 @@ import {ImageLazyLoad} from "../util/ImageLazyLoad"
       this.setImgLazyLoad()
       this.updateHeaderVariables()
       this.setImageLayout()
+      this.setMainMinHeight()
       console.log("next mounted")
     })
 
@@ -207,6 +211,52 @@ export default class Layout extends Vue {
 
     })
 
+  }
+
+  get isHome() {
+    return this.$page.path === '/'
+  }
+
+  mainMinHeight = ""
+
+  get defaultMainMinHeight(): string {
+    return `calc( 100vh - ${this.pageHeaderHeight} - ${this.mainMarginBottom} )`
+  }
+
+  get mainMarginBottom(): string {
+    const appMain = this.$refs.appMain
+
+    if( appMain instanceof HTMLElement ) return window.getComputedStyle( appMain ).marginBottom
+
+    return "0"
+  }
+
+  get pageHeaderHeight(): string {
+    const pageHeader = this.$refs.pageHeader
+
+    if( "$el" in pageHeader ) return pageHeader.$el.getBoundingClientRect().height + "px"
+
+    return "0"
+  }
+
+  setMainMinHeight() {
+
+    if( this.isHome ) {
+      const footer = this.$refs.appFooter
+
+      console.info('is hone')
+
+      if( "$el" in footer ) {
+
+        const footerHeight = footer.$el.getBoundingClientRect().height
+        this.mainMinHeight = `calc( 100vh - ${this.pageHeaderHeight} - ${this.mainMarginBottom} - ${footerHeight}px )`
+
+        return
+
+      }
+    }
+
+    this.mainMinHeight = this.defaultMainMinHeight
   }
 
   // todo: random position for home over images

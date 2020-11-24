@@ -1,19 +1,22 @@
 import { EnhanceApp } from 'vuepress-types'
 import {IGalleryImageProp} from "./components/IGalleryImage"
 import {ImageLazyLoad} from "./util/ImageLazyLoad"
+import {FontIsLoading} from "./util/FontIsLoading"
 
 export interface IStoreState {
   imageGallery: null | IGalleryImageProp
   currentsImageLazyLoad: ImageLazyLoad[]
+  showAppPage: boolean,
 }
 
 export const store = {
   state: {
     imageGallery: null,
     currentsImageLazyLoad: [],
+    showAppPage: true,
   } as IStoreState,
 
-  setImageGallery(prop: IGalleryImageProp) {
+  setImageGallery( prop: IGalleryImageProp ) {
     this.state.imageGallery = prop
   },
 
@@ -27,7 +30,11 @@ export const store = {
 
   clearCurrentsImageLazyLoad() {
     this.state.currentsImageLazyLoad = []
-  }
+  },
+
+  setShowAppPage( value: boolean ) {
+    this.state.showAppPage = value
+  },
 }
 
 const enhanceApp: EnhanceApp = ({ Vue, router }) => {
@@ -44,5 +51,9 @@ const enhanceApp: EnhanceApp = ({ Vue, router }) => {
     next()
   })
 }
+
+const fontLoadingWatcher = new FontIsLoading("InterText", () => {
+
+})
 
 export default enhanceApp

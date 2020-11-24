@@ -1,6 +1,6 @@
 ---
 
-speakers: 
+professors:
     - Laure Krayenbuhl: https://a-projectstudio.ch/en/whoweare
     - Douglas Edric Stanley: http://www.abstractmachine.net
     
