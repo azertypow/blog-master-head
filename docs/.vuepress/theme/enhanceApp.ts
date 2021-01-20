@@ -52,8 +52,8 @@ const enhanceApp: EnhanceApp = ({ Vue, router }) => {
   })
 }
 
-const fontLoadingWatcher = new FontIsLoading("InterText", () => {
-
-})
+// const fontLoadingWatcher = new FontIsLoading("InterText", () => {
+//
+// })
 
 export default enhanceApp
