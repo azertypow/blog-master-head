@@ -15,7 +15,7 @@
             </div>
 
             <div class="v-page-nav__top__right">
-                <a href="https://mastermediadesign.ch" target="_blank" class="l-ui-link-no-style">mastermediadesign.ch</a>
+                <a href="https://www.hesge.ch/head/formations-recherche/master-en-media-design" target="_blank" class="l-ui-link-no-style">mastermediadesign.ch</a>
             </div>
 
         </div>
