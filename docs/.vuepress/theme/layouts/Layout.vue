@@ -244,8 +244,6 @@ export default class Layout extends Vue {
     if( this.isHome ) {
       const footer = this.$refs.appFooter
 
-      console.info('is hone')
-
       if( "$el" in footer ) {
 
         const footerHeight = footer.$el.getBoundingClientRect().height
