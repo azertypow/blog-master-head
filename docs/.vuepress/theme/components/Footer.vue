@@ -1,6 +1,15 @@
 <template>
     <footer class="v-footer">
 
+        <div class="v-footer__social" v-if="isHome">
+          <div class="v-footer__social__content">
+            <a target="_blank" href="https://twitter.com/HeadMediaDesign">Twitter</a>
+            <a target="_blank" href="https://www.instagram.com/headmediadesign/">Instagram</a>
+            <a target="_blank" href="https://vimeo.com/headmediadesign">Vimeo</a>
+            <a target="_blank" href="https://www.hesge.ch/head/en/programs-research/master-arts-media-design">HEAD&nbsp;–&nbsp;Genève</a>
+          </div>
+        </div>
+
         <div class="v-footer__top-box">
             <div class="v-footer__top">
                 <div class="v-footer__top__left"></div>
@@ -93,6 +102,28 @@
 
     .v-footer__top-box {
         background: $site-theme-color;
+    }
+
+    .v-footer__social {
+      @include column-container;
+      height: $footer-height;
+      background: $site-theme-color;
+      border-bottom: solid 1px;
+      //color: $site-theme-color;
+      //background: $site-color;
+    }
+
+    .v-footer__social__content {
+      padding-left: $grid-gutter-width / 2;
+      padding-right: $grid-gutter-width / 2;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      > a {
+        color: blue;
+        text-decoration: none;
+      }
     }
 
     .v-footer__top {
