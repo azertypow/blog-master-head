@@ -274,6 +274,10 @@ export default class Layout extends Vue {
 <style lang="scss">
   @import "../styles/params";
 
+  #v-app {
+    background: $site-theme-color;
+  }
+
   .fade-enter {
     opacity: 0;
     transform: translate3d(0, 20px, 0);
