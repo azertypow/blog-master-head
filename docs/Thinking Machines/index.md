@@ -18,7 +18,7 @@ assistants:
     
 date: 10.04.2020
 
-cover: "https://i.imgur.com/k1ZIXl9.gif"
+cover: "https://i.imgur.com/0aLkYsc.jpg"
 
 cover-color: "#000000"
 
@@ -68,12 +68,16 @@ It all starts with a punch card, and a series of (not so innocent) questions. To
 Not without a certain sense of irony, *The Loom* outlines a stark, even dystopian view of the future of visual communication. But it also suggests a possible alternative, as we return to many of the principles that animated early computer science, the personal computer revolution, open source communities, and a world-wide web of collective forms of knowledge production. The old becomes the new becomes the old — and round and round again.
 
 ### Punch cards sample
+
 ![](https://i.imgur.com/g0toDHp.jpg)
 ![](https://i.imgur.com/wTUSaMT.jpg)
 ![](https://i.imgur.com/DyGuPA1.jpg)
 
 
 ### Instructions to create visuals with hand shadow
+
+![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/IfYHxPt.jpg)
+
 ![](https://i.imgur.com/5JW0epY.jpg)
 ![](https://i.imgur.com/ZrjkFzd.jpg)
 ![](https://i.imgur.com/Dg48H0c.jpg)
@@ -91,18 +95,30 @@ Not without a certain sense of irony, *The Loom* outlines a stark, even dystopia
 ![](https://i.imgur.com/6F36JXB.jpg)
 
 
+### Draw the text generated layout
+
+![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/YdNw6g1.jpg)
+
+
+### Get your own book
+
+![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/LKSY3Yc.jpg)
+
+
+
 ### *The Loom* Concept
-![First installation proposition](https://i.imgur.com/rxjBHk6.jpg)
+
+![](https://i.imgur.com/k1ZIXl9.gif)
+
+![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/rgSwNOf.jpg)
+
 ![Technical mecanism](https://i.imgur.com/9o3olgD.jpg)
 
 
 ##### [All source code on GitHub](https://github.com/abstractmachine/ThinkingMachines)
 
-
-![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/rgSwNOf.jpg)
 ![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/QKUoPfJ.jpg)
-![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/0aLkYsc.jpg)
+
 ![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/rHO7XRY.jpg)
-![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/YdNw6g1.jpg)
-![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/IfYHxPt.jpg)
-![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/LKSY3Yc.jpg)
+
+
