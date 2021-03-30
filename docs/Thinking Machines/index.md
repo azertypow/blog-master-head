@@ -61,7 +61,7 @@ This collective project, realised by first year students from [Media Design Mast
  
 ## A Loom to generate stories  
  
-*The Loom* is a human <--> machine collaborative publishing system for generating bespoke narratives. It uses punch cards, text transformers, hand shadows, voice recognition, machine learning and web publishing tools to build these singular tales.
+*The Loom* is a human <-> machine collaborative publishing system for generating bespoke narratives. It uses punch cards, text transformers, hand shadows, voice recognition, machine learning and web publishing tools to build these singular tales.
 
 It all starts with a punch card, and a series of (not so innocent) questions. To begin the process, carefully fill in your answers and place the card into the machine. The machine analyses your choices, and leads you from station to station through each of the steps required to generate your tale. Each station unlocks its own form of interaction, allowing you to collaboratively guide the AI: a felt-tip pen allows you to draw your layout freehand; illustrations are selected by interpreting your hands over a lightbox; while your voice allows you to dialogue back and forth with the machine as it asks you to help it flesh out the details of your narrative. The result is a hand-machine-crafted booklet, co-created by you and a series of digital assistants.
 
@@ -97,3 +97,12 @@ Not without a certain sense of irony, *The Loom* outlines a stark, even dystopia
 
 
 ##### [All source code on GitHub](https://github.com/abstractmachine/ThinkingMachines)
+
+
+![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/rgSwNOf.jpg)
+![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/QKUoPfJ.jpg)
+![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/0aLkYsc.jpg)
+![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/rHO7XRY.jpg)
+![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/YdNw6g1.jpg)
+![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/IfYHxPt.jpg)
+![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/LKSY3Yc.jpg)
