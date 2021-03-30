@@ -97,3 +97,12 @@ Not without a certain sense of irony, *The Loom* outlines a stark, even dystopia
 
 
 ##### [All source code on GitHub](https://github.com/abstractmachine/ThinkingMachines)
+
+
+![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/rgSwNOf.jpg)
+![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/QKUoPfJ.jpg)
+![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/0aLkYsc.jpg)
+![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/rHO7XRY.jpg)
+![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/YdNw6g1.jpg)
+![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/IfYHxPt.jpg)
+![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/LKSY3Yc.jpg)
