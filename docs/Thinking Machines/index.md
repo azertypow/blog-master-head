@@ -104,8 +104,6 @@ Not without a certain sense of irony, *The Loom* outlines a stark, even dystopia
 
 ### *The Loom* Concept
 
-![](https://i.imgur.com/k1ZIXl9.gif)
-
 ![©HEAD — Genève,Michel Giesbrecht](https://i.imgur.com/rgSwNOf.jpg)
 
 ![Technical mecanism](https://i.imgur.com/9o3olgD.jpg)
