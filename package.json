@@ -13,7 +13,7 @@
     "imagemin": "^7.0.1",
     "imagemin-giflossy": "^5.1.10",
     "normalize.css": "^8.0.1",
-    "sharp": "^0.25.2",
+    "sharp": "^0.30.5",
     "vue": "^2.6.11"
   },
   "devDependencies": {
